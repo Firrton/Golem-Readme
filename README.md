@@ -60,29 +60,6 @@ em português.
 
 ---
 
-## 📂 Estructura del repositorio · Estrutura do repositório
-
-```
-.
-├── assets/                  ← Logos e imágenes compartidas
-├── es/                      ← Documentación en español
-│   ├── README.md
-│   ├── FAQ.md
-│   └── docs/
-│       ├── guia_builders.md
-│       ├── pitch_template.md
-│       └── submission-guide.md
-└── pt/                      ← Documentação em português
-    ├── README.md
-    ├── FAQ.md
-    └── docs/
-        ├── guia_builders.md
-        ├── pitch_template.md
-        └── submission-guide.md
-```
-
----
-
 <div align="center">
 
 <img src="./assets/golem-logo.png" alt="Golem" width="60" />
