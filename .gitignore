@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# Claude Code / agent tooling
+.claude/
+.agents/
+skills-lock.json
+
+# Local logo source pack (we use assets/ instead)
+Golem.Network_logo_pack/
