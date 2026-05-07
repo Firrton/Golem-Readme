@@ -175,7 +175,7 @@ O programa funciona como uma colaboração estruturada com compromissos claros d
 | [📦 Submission Guide](./docs/submission-guide.md) | Requisitos formais para a entrega do projeto |
 | [❓ FAQ](./FAQ.md) | Perguntas frequentes sobre o programa |
 
-> 🇪🇸 **Versión en español:** [`/es/README.md`](../es/README.md)
+> 🇬🇧 **English version:** [`/en/README.md`](../en/README.md) · 🇪🇸 **Versión en español:** [`/es/README.md`](../es/README.md)
 
 ---
 

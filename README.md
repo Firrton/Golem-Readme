@@ -6,7 +6,7 @@
 
 # Golem Community Builder Programme
 
-**Construir sobre compute descentralizado · Construa sobre compute descentralizado**
+**Build on decentralized compute · Construir sobre compute descentralizado · Construa sobre compute descentralizado**
 
 <br />
 
@@ -23,13 +23,25 @@
 
 <div align="center">
 
-## 🌐 Selecciona tu idioma · Selecione seu idioma
+## 🌐 Choose your language · Selecciona tu idioma · Selecione seu idioma
 
 <br />
 
 <table>
 <tr>
-<td align="center" width="50%">
+<td align="center" width="33%">
+
+### 🇬🇧 English
+
+Full programme documentation
+in English.
+
+<br />
+
+[**→ Go to the English version**](./en/README.md)
+
+</td>
+<td align="center" width="33%">
 
 ### 🇪🇸 Español
 
@@ -41,7 +53,7 @@ en español.
 [**→ Ir a la versión en español**](./es/README.md)
 
 </td>
-<td align="center" width="50%">
+<td align="center" width="33%">
 
 ### 🇧🇷 Português
 
