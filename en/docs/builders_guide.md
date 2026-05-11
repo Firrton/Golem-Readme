@@ -1,44 +1,34 @@
 # Builders Guide
 
-Technical reference document of the **Builder Programme**. This guide describes the five available tracks, the recommended technical stack, the considerations common to all projects, and the criteria the Golem team uses to evaluate the technical scope of each proposal.
-
-Reading this document is the recommended prior step before writing a pitch. It allows the builder to identify the right track, calibrate the project's scope and understand the level of technical depth expected from the deliverable.
+Technical reference for the **Builder Programme**: five tracks, recommended stack, and evaluation criteria. Required reading before the pitch.
 
 ---
 
 ## General framework
 
-### How an application on Golem works
+### Network model
 
-An application built on Golem Network operates under a decentralized market model in which two main roles coexist. The **requestor** is the one who requests compute, defines the characteristics of the workload and pays for its execution in $GLM. The **provider** is the one who contributes computational capacity from a machine connected to the network and receives payment corresponding to the service rendered.
+Golem runs as a decentralized marketplace with two roles: the **requestor** asks for compute and pays in $GLM; the **provider** contributes capacity and earns. Both sides run the **yagna** daemon locally. Every project in the programme must execute real work on the network (testnet or mainnet) and prove it with logs and metrics.
 
-The interaction between both roles is managed through a market in which requestors publish orders with their technical and budget requirements, providers respond with proposals, and the negotiation closes via a formal agreement that triggers the execution of the task. The whole life cycle, from negotiation to final payment, is mediated by the **yagna** daemon, which each participant runs locally.
+→ Reference: [Golem Overview](https://docs.golem.network/docs/golem/overview).
 
-For builders in the programme, this model means that each project must necessarily execute real work on the network, whether testnet or mainnet, and must be able to demonstrate via logs and metrics that the execution actually occurred in a distributed manner.
+### Current stack
 
-### Current technical stack
+| Layer | Component | When to use it |
+|---|---|---|
+| Daemon | **yagna** ≥ 0.17.4 | Always. Entry point to the network. [Installation](https://docs.golem.network/docs/quickstarts/js-quickstart). |
+| High-level orchestration | **@golem-sdk/task-executor** | Default. Map-reduce patterns and parallelization. [Task Model](https://docs.golem.network/docs/creators/javascript/guides/task-model). |
+| Low-level orchestration | **@golem-sdk/golem-js** 3.x | Fine-grained market control, custom provider selection. [API Reference](https://docs.golem.network/docs/golem-js/reference/overview). |
+| Frontend | **@golem-sdk/react** | When the project has UI (mainly Tracks A and D). |
 
-Golem Network currently offers a development stack organized in layers, designed to allow different levels of abstraction depending on the complexity of the use case. The programme recommends builders work with the current stack and avoid deprecated versions.
+Primary language: **JavaScript / TypeScript on Node.js ≥ 20**. SDKs exist in other languages, but the documentation and examples live in the JS ecosystem.
 
-The central daemon is **yagna**, in version 0.17.4 or higher, which is the component that each builder runs locally to connect to the network. Installing yagna is the first technical step of any project and is documented in detail in the official Golem documentation.
+### Testnet vs mainnet
 
-On top of yagna, the programme recommends as the main path the use of **@golem-sdk/task-executor**, a JavaScript and TypeScript library oriented specifically to map-reduce patterns and task parallelization. Given that the five tracks of the programme revolve around parallelizable workloads, this library offers the most appropriate abstraction for most projects: the builder defines what task they want to execute, and the library takes care of orchestrating providers, managing retries and coordinating results.
+- **Testnet (`hoodi`)** — Recommended by default. Free tGLM via the CLI command `yagna payment fund`, same API as mainnet, functionally equivalent for demonstration purposes. Alternatives also supported: sepolia, rinkeby, amoy. [Quickstart with `payment fund`](https://docs.golem.network/docs/quickstarts/js-quickstart).
+- **Mainnet (Polygon)** — Only if the project requires real economic behavior or production integration. Runs on **Polygon** (`erc20-polygon-glm`), not Ethereum L1. Typical costs: units to tens of $GLM per project. Document costs in the final deliverable. [Switching to mainnet](https://docs.golem.network/docs/creators/javascript/examples/switching-to-mainnet) · [Payments model](https://docs.golem.network/docs/golem/payments).
 
-For builders with more specific needs or prior experience in distributed systems, **@golem-sdk/golem-js** is available in its 3.x version, offering direct access to the protocol's low-level models (`ResourceRental`, `ExeUnit`, fine control of market and negotiation). This option is appropriate for projects that require non-standard orchestration logic, integration with complex frameworks or granular control over provider selection.
-
-Additionally, **@golem-sdk/react** is available for builders who wish to incorporate a frontend into their project, which is particularly relevant for Tracks A and D, where the visual dimension provides demonstrative value.
-
-As a quick reference, builders should assume that the primary language of the programme is JavaScript or TypeScript running on Node.js 20 or higher. Alternative SDKs in other languages exist, but the most up-to-date documentation and official examples concentrate on the JavaScript ecosystem.
-
-### Testnet and mainnet
-
-The programme accepts deliverables executed both on Golem's testnet and on mainnet. Each option has distinct implications worth considering when planning the project.
-
-The testnet, which currently runs on the **hoodi** network, is the recommended environment for most projects in the programme. It allows real work to be executed on the network without the need to acquire $GLM on mainnet, uses test tokens (tGLM) that can be obtained for free from a faucet, and offers the same API surface as mainnet. For demonstration purposes, the testnet is functionally equivalent to mainnet and sufficient to satisfy the programme's requirements.
-
-Mainnet, on the other hand, runs with real $GLM and should be used when the project requires demonstrating real economic behaviour, integrations with production systems or use cases that depend specifically on the marketplace under real conditions. Builders who opt for mainnet should anticipate in their pitch the costs associated with compute usage, which are generally modest but should be documented in the final deliverable.
-
-The choice between testnet and mainnet must be made explicit in the pitch and remain consistent during development. Any change between networks during the execution of the project requires notification to the Golem team.
+The choice is declared in the pitch and kept throughout development. Any change must be notified to the team.
 
 ---
 
@@ -46,215 +36,116 @@ The choice between testnet and mainnet must be made explicit in the pitch and re
 
 **Parallel processing of audio and video files across multiple providers.**
 
-### Description
+The classic use case for decentralized compute and the most readable demo for a broad audience. Ideal as a first project for Web2 builders with backend or media processing experience.
 
-Media processing constitutes the classic use case of decentralized compute and the most legible technical demonstration for a wide audience. The logic is straightforward: a large file is split into fragments, each fragment is processed independently on a different provider, and the results are reassembled into a single output file. What would take twenty minutes on a single machine can be completed in a fraction of the time if the load is distributed correctly.
+**Suggested directions:**
+- **Parallel transcoding with FFmpeg** — Split video, transcode segments in parallel, reassemble. Key metric: total time vs sequential execution. *Complexity: basic-intermediate.*
+- **Parallel transcription with Whisper** — Long audio segmented into chunks, distributed transcription, merge with time markers. Reference: [gScribe](https://gscribe.ai/). *Intermediate.*
+- **Image pipeline at scale** — Hundreds/thousands of images with parallel transformations (resize, format, filters, metadata). *Basic-intermediate.*
+- **Web app with upload and processing** — UI to upload a file, choose processing, show progress per provider. *Intermediate-advanced.*
 
-This track is especially suitable as a first project on Golem for Web2 builders with experience in backend or media processing. The chunking and merge logic is relatively intuitive, the auxiliary tools (FFmpeg, Whisper) are widely known, and the final deliverable allows the benefit of parallelization to be demonstrated visually.
+**Stack:** task-executor + FFmpeg/Whisper/ImageMagick in custom Golem images via Gvmkit-build. Optional frontend with @golem-sdk/react. Start from images in the [Golem Registry](https://registry.golem.network) or your own Dockerfile.
 
-### Suggested project directions
+**Resources:** [Parallel tasks tutorial](https://docs.golem.network/docs/creators/javascript/tutorials/running-parallel-tasks) · [Building custom image](https://docs.golem.network/docs/creators/javascript/tutorials/building-custom-image) (FFmpeg, Whisper) · [Transferring data](https://docs.golem.network/docs/creators/javascript/examples/transferring-data) (chunks) · [Running in browser](https://docs.golem.network/docs/creators/javascript/tutorials/running-in-browser) (web app) · [tesseract-ocr-golem](https://github.com/golemfactory/tesseract-ocr-golem) · [Golem Registry](https://registry.golem.network)
 
-**Parallel video transcoding with FFmpeg.** Build a tool that takes a video file as input, splits it into segments of fixed duration, runs FFmpeg on each segment on a different provider to transcode it into one or several output formats (for example, H.264 in different resolutions for adaptive streaming), and reassembles the segments into a coherent final file. The key metric to document is the total processing time compared to sequential execution on a single machine. Estimated complexity: basic to intermediate.
-
-**Parallel audio transcription with Whisper.** Take a long audio file (a conference, a podcast, an interview), segment it into chunks with minimal overlap to preserve continuity, run Whisper on each chunk in parallel across multiple providers, and combine the resulting transcripts into a single text with correct timestamps. The reference project [gScribe](https://gscribe.ai/) implements this direction and can be consulted as an example. Estimated complexity: intermediate.
-
-**Image processing pipeline at scale.** Build a tool that receives a large set of images (for example, several hundred or thousand) and applies transformations in parallel: resizing, format conversion, application of filters, metadata extraction, thumbnail generation. The technical interest lies in designing the minimum unit of work and in efficiently managing file transfers between the requestor and the providers. Estimated complexity: basic to intermediate.
-
-**Web application with upload and processing on Golem.** Build a simple web interface in which a user can upload a file, choose a type of processing, and get the processed result back. The application should transparently demonstrate that the processing occurs on Golem, ideally showing in the UI the progress of the individual providers. This direction combines distributed backend with frontend, and is particularly suitable for builders with full-stack experience. Estimated complexity: intermediate to advanced.
-
-### Recommended technical stack
-
-The most direct path is @golem-sdk/task-executor for parallel task orchestration, in combination with FFmpeg, Whisper, ImageMagick or other open-source tools installed inside custom Golem images via Gvmkit-build. Builders can start from existing images in the [Golem Registry](https://registry.golem.network) or build their own from a Dockerfile. For projects with frontend, @golem-sdk/react offers hooks that simplify integration between the interface and execution on the network.
-
-### Deliverables
-
-The deliverable consists of a public GitHub repository with functional code, a detailed README that includes reproducible installation and execution instructions, at least one documented run with real metrics comparing the execution time on Golem against a single-machine baseline, and a brief write-up published on the Golem Discord that explains in accessible language what was built and what was learned.
-
-### Relevant resources
-
-- [Tutorial: Running tasks in parallel](https://docs.golem.network/docs/creators/javascript/tutorials/running-parallel-tasks) in the official documentation.
-- [Tesseract OCR on Golem](https://github.com/golemfactory/tesseract-ocr-golem) as an example of a library that parallelizes a CLI tool over the network.
-- [Golem Registry](https://registry.golem.network) for pre-existing images usable in the project.
-
-### Success criterion
-
-Does the project demonstrate a measurable and reproducible improvement in processing time when running on Golem compared to a single machine, with metrics documented in the README?
+**Success criterion:** Does the project demonstrate a measurable and reproducible time improvement on Golem vs a single machine, with metrics in the README?
 
 ---
 
 ## Track B — Compute-Intensive Simulation
 
-**Numerical simulations, Monte Carlo and scientific computation at scale.**
+**Numerical simulations, Monte Carlo, and scientific computation at scale.**
 
-### Description
+Parallelizable workloads where each unit of work is independent. The technical value is in the design of the parallelization: how to split, how to aggregate results, how to present outputs. Suitable for builders with quantitative backgrounds (finance, physics, statistics, engineering).
 
-Golem is particularly well-suited for workloads that benefit from large-scale parallelism: Monte Carlo simulations, numerical experiments, combinatorial analysis and any computation in which each unit of work is independent of the others. The technical interest of this track lies less in the tool used and more in the design of the parallelization: how to divide the problem into units of work, how to aggregate the partial results, and how to present the outputs in a comprehensible way.
+**Suggested directions:**
+- **Monte Carlo for option pricing** — Tens/hundreds of thousands of distributed paths. Validate against Black-Scholes for European options. *Intermediate.*
+- **Portfolio risk analysis** — VaR or Expected Shortfall via distributed simulation. *Intermediate-advanced.*
+- **Physical or mathematical simulation** — Particle dynamics, fractals, cellular automata, epidemiological models. Visualizable output. *Intermediate.*
+- **Matrix multiplication benchmark** — Block partitioning, comparison with local hardware. *Advanced.*
 
-This track is suitable for builders with technical or academic background in quantitative disciplines (finance, physics, applied mathematics, statistics, engineering) who want to use Golem as compute infrastructure for a concrete experiment. It is also attractive for Web2 developers interested in high-performance computing who are looking for a decentralized alternative to traditional clusters.
+**Stack:** task-executor for orchestration. Language within providers is free (Python+NumPy/SciPy common, C++/Rust if CPU-bound). Package with Gvmkit-build. Local visualization: matplotlib, Plotly, D3.js.
 
-### Suggested project directions
+**Resources:** [Running parallel tasks](https://docs.golem.network/docs/creators/javascript/tutorials/running-parallel-tasks) · [Building custom image](https://docs.golem.network/docs/creators/javascript/tutorials/building-custom-image) (Python+NumPy/SciPy) · [Task API Quickstarts](https://docs.golem.network/docs/creators/javascript/quickstarts) · [Golem Workers](https://github.com/golemfactory/golem-workers) (alternative API for direct CPU/GPU)
 
-**Monte Carlo simulation for option pricing.** Implement a pricing model for European or Asian options via Monte Carlo simulation, distributing tens or hundreds of thousands of simulation paths across multiple providers. The deliverable should include comparison of results against known analytical formulas (Black-Scholes for European options) as correctness validation, and convergence metrics showing how the error decreases as the number of simulations grows. Estimated complexity: intermediate.
-
-**Portfolio risk analysis.** Build a tool that takes the composition of a portfolio of assets and runs a Value at Risk (VaR) or Expected Shortfall analysis via distributed simulation. The interest of the project lies in demonstrating how Golem allows analyses of greater granularity or over a greater number of scenarios than would be feasible on an individual machine. Estimated complexity: intermediate to advanced.
-
-**Parallelizable physical or mathematical simulation.** Implement a classical simulation in which each unit of work is independent: particle dynamics with random initial conditions, distributed generation of fractals with variable parameters, search for patterns in cellular automata, exploration of parameter spaces in epidemiological models. The choice of problem is free as long as the parallelization component is genuine and the output is visualizable or presentable in a clear manner. Estimated complexity: intermediate.
-
-**Large-scale matrix multiplication benchmark.** Implement distributed multiplication of large matrices via block partitioning, comparing the performance of Golem against local hardware at different input sizes. This project is more technical than applied, but produces useful quantitative data on the characteristics of the network and can become a reference for future builders. Estimated complexity: advanced.
-
-### Recommended technical stack
-
-@golem-sdk/task-executor is again the main option for orchestration. The choice of computation language inside the providers is free and depends on the problem: Python with NumPy and SciPy is common for scientific problems, while C++ or Rust are preferable when the bottleneck is pure CPU. Builders can package their dependencies in custom Golem images via Gvmkit-build. For visualization of results, standard libraries such as matplotlib, Plotly or D3.js are appropriate and do not need to run on Golem.
-
-### Deliverables
-
-The repository must include functional code with reproducible instructions, the results of at least one real run with visualization or table of results, a section in the README documenting what was parallelized, what was kept sequential and why, and notes on the technical challenges encountered during parallelization (granularity of tasks, error handling, aggregation of results).
-
-### Relevant resources
-
-- [Task API Quickstarts](https://docs.golem.network/docs/creators/javascript/quickstarts) for basic parallelization patterns.
-- [Golem Workers](https://github.com/golemfactory/golem-workers) as a high-level alternative API for direct CPU and GPU access.
-
-### Success criterion
-
-Does the project effectively run computations in parallel across multiple providers, produce results validatable against a known baseline or a convergence analysis, and document in a comprehensible way the design decisions of the parallelization?
+**Success criterion:** Does it execute real parallel computation across multiple providers, produce results validatable against a known baseline or convergence analysis, and document the parallelization decisions?
 
 ---
 
 ## Track C — Provider Reputation & Benchmarking
 
-**Measurement, observability and analysis tools for the provider ecosystem.**
+**Measurement, observability, and analysis tools for the provider ecosystem.**
 
-### Description
+Golem already has official reputation via AgreementSelector. This track does not replace it: it complements it with dashboards, benchmarking suites, audits, and visualizations. Unlike demo tracks, deliverables here can become tools for continuous use.
 
-As the number of providers connected to the network grows, the question of which ones are fast, reliable, economical or suitable for specific workloads becomes increasingly relevant. Golem already has an official reputation system implemented in the AgreementSelector component, which means this track does not aim to replace that infrastructure, but rather to build complementary tools that enrich it: public dashboards, specialized benchmarking suites, audit tools and visualizations that make ecosystem data more accessible.
+**Suggested directions:**
+- **Public metrics dashboard** — Network status, active providers, prices, latencies, hardware. *Intermediate.*
+- **Benchmarking suite per workload** — Standardized tests (rendering, transcoding, ML, compute) with periodic execution and rankings. *Intermediate-advanced.*
+- **Independent audit tool** — Validate official metrics with random tests on providers. *Advanced.*
+- **Discord bot / notification agent** — Periodic alerts or summaries: new providers, downtime, pricing changes. *Basic-intermediate.*
 
-This track is suitable for builders with experience in data engineering, observability, dashboards or distributed systems. It produces deliverables with clear differential value: unlike demo-oriented tracks, projects in this track can become tools of continuous use within the ecosystem.
+**Stack:** **golem-js directly** (preferable to task-executor for fine-grained provider selection control) + backend for structured storage (Postgres, SQLite, serverless) + presentation layer matching the format (dashboard, bot, API).
 
-### Suggested project directions
+**Resources:** [Selecting providers](https://docs.golem.network/docs/creators/javascript/examples/selecting-providers) · [golem-js API Reference](https://docs.golem.network/docs/golem-js/reference/overview) · [Golem AgreementSelector](https://blog.golem.network/agreementselector/) · [yagna API](https://docs.golem.network/docs/golem/yagna)
 
-**Public dashboard of network metrics.** Build a web application that queries the state of the Golem network, gathers data on active providers, price distribution, latencies, hardware capabilities offered, and presents them in an accessible and up-to-date dashboard. The project can consume data from the existing AgreementSelector and enrich it with its own metrics. Estimated complexity: intermediate.
-
-**Benchmarking suite for specific workloads.** Design and implement a battery of standardized tests that measure the performance of providers in concrete workload categories: rendering, transcoding, ML inference, numerical computation. The suite should run periodically, store results in a structured way, and publish rankings or comparatives that allow other builders to choose providers suitable for their use cases. Estimated complexity: intermediate to advanced.
-
-**Independent audit tool.** Build a tool that externally validates the metrics reported by the official reputation system, running random tests on selected providers and comparing the observed results against those expected according to the AgreementSelector. The value of the project lies in providing additional transparency to the ecosystem. Estimated complexity: advanced.
-
-**Discord bot or notification agent.** Build a bot that monitors the state of the network continuously and publishes on the Golem Discord alerts or periodic summaries: new providers, detected outages, significant changes in pricing, top performers of the week. The project combines monitoring infrastructure with accessible presentation for the community. Estimated complexity: basic to intermediate.
-
-### Recommended technical stack
-
-The project requires use of the Golem SDK for executing tests on providers (@golem-sdk/golem-js is preferable to task-executor in this track because projects usually need fine control over provider selection and market filters), a backend for structured storage of results (PostgreSQL, SQLite, or a serverless database depending on the scope), and a frontend or presentation layer appropriate to the format of the deliverable (web dashboard, Discord bot, public API).
-
-### Deliverables
-
-The repository must include functional code, at least one complete execution with real data gathered from the network, a visualization or summary of the data obtained, and documentation that allows other builders to run the tool or consume its outputs.
-
-### Relevant resources
-
-- [Golem AgreementSelector](https://blog.golem.network/agreementselector/) as reference of the official reputation system.
-- [yagna API](https://docs.golem.network/docs/golem/yagna) for programmatic access to the state of the network.
-
-### Success criterion
-
-Does the project produce real data on the state of the Golem network, present it in a comprehensible and useful way, and provide value that complements the official reputation system without duplicating it?
+**Success criterion:** Does it produce real data about the network state, present it usefully, and complement the official system without duplicating it?
 
 ---
 
 ## Track D — Chess Engine / Game AI at Scale
 
-**Game artificial intelligence as a legible demonstration of parallelism.**
+**Distributed game AI as a readable demonstration of parallelism.**
 
-### Description
+Distributing a game AI engine (chess, Go, Othello, strategy) works surprisingly well as a public demo: visually understandable logic, technically non-trivial, readable even for non-technical audiences. High viral potential.
 
-Distributing a game artificial intelligence engine (chess, Go, Othello, strategy games) across multiple providers turns out to be surprisingly effective as a public demonstration of Golem. The logic is visually comprehensible, technically non-trivial, and the result is legible even for non-technical audiences. This track uses game AI as a vehicle for demonstrating parallelism, not as an end in itself.
+**Suggested directions:**
+- **Distributed Stockfish** — Wrapper that distributes analysis via Stockfish-MPI or search-tree partitioning. *Intermediate-advanced.*
+- **Visual analysis interface** — UI showing in real time how providers evaluate lines and results consolidate. *Advanced.*
+- **Distributed engine tournament** — Automatic games between Stockfish, Komodo, and custom engines, one per provider. *Intermediate.*
+- **Alternative game AI** — Go with distributed MCTS, poker with hand simulation, strategy games with deep search. *Intermediate-advanced.*
 
-It is suitable for builders interested in games, AI, search in decision trees or distributed systems, and produces deliverables with high viral potential on social networks and community. A well-built demo in this track can become one of the most effective marketing resources of the programme.
+**Stack:** task-executor for orchestration + the chosen game engine (Stockfish compiled from source for advanced integrations). For UI: @golem-sdk/react + chess.js or equivalent.
 
-### Suggested project directions
+**Resources:** [Running parallel tasks](https://docs.golem.network/docs/creators/javascript/tutorials/running-parallel-tasks) · [Building custom image](https://docs.golem.network/docs/creators/javascript/tutorials/building-custom-image) (Stockfish compiled from source) · [Stockfish](https://stockfishchess.org/) · [chess.js](https://github.com/jhlywa/chess.js)
 
-**Distributed Stockfish on Golem.** Implement a wrapper that distributes Stockfish's analysis (the strongest open-source chess engine) across multiple providers, allowing several positions to be analysed simultaneously or the analysis of a single position to be deepened by partitioning the search tree. The Stockfish-MPI variant is particularly suitable for distributed parallelization. Estimated complexity: intermediate to advanced.
-
-**Visual interface for distributed analysis.** Build a web application that shows in real time how the analysis is distributed across providers: a chess position on screen, individual providers evaluating different lines, and the results consolidating into a final recommendation. The visual dimension makes the project particularly demonstrative. Estimated complexity: advanced.
-
-**Distributed engine tournament.** Implement a system that runs automatic tournaments between different chess engines (Stockfish, Komodo, custom engines) on Golem, with each game running on a different provider. The deliverable includes the tournament results, time and cost metrics, and an interface to visualize the games. Estimated complexity: intermediate.
-
-**Distributed alternative game AI.** Instead of chess, implement parallelization for another game: Go with distributed Monte Carlo Tree Search, poker with hand simulation at scale, or a strategy game with deep search. The choice of game is free as long as the parallelizable component is genuine. Estimated complexity: intermediate to advanced.
-
-### Recommended technical stack
-
-@golem-sdk/task-executor for orchestration of parallel evaluations, together with the chosen game engine (Stockfish is usually compiled from source for advanced integrations). For the visual interface, @golem-sdk/react allows the game state to be linked with execution on the network in a natural way. Libraries such as chess.js or equivalents facilitate the representation of the game state in the frontend.
-
-### Deliverables
-
-The repository must include functional code with execution instructions, a recording or screenshots showing the system in operation, metrics documenting the cost in $GLM and the execution times observed, and a write-up for Discord that explains in an accessible way what was built.
-
-### Relevant resources
-
-- [Stockfish](https://stockfishchess.org/) as the reference chess engine.
-- [chess.js](https://github.com/jhlywa/chess.js) for game state manipulation in JavaScript.
-
-### Success criterion
-
-Does the project genuinely distribute computation across multiple providers, produce a deliverable visually comprehensible to a wide audience, and document concrete metrics of performance and cost?
+**Success criterion:** Does it genuinely distribute compute across multiple providers, produce a visually comprehensible deliverable, and document performance and cost metrics?
 
 ---
 
 ## Track E — Open Track
 
-**Builder's free proposal, validated before kickoff.**
+**Builder's own proposal, validated before kickoff.**
 
-### Description
+For builders with their own idea that uses Golem in an interesting way and doesn't fit tracks A-D. Conditions: it runs on real Golem, produces a public deliverable, and demonstrates the capabilities of decentralized compute.
 
-Track E is reserved for builders who have their own idea that uses Golem's compute in an interesting way and that does not naturally fit into the four previous tracks. The flexibility is deliberate: the Golem team prefers to fund well-oriented work coming from the builder's own initiative rather than forcing projects to fit into predefined tracks.
+**Eligible:** integrations with other ecosystems (Ethereum, IPFS, other Web3), exploratory demos for technical audiences, reusable libraries, artistic or experimental projects.
 
-The only substantive conditions are that the project effectively runs on Golem, produces a public and shareable deliverable, and demonstrates what decentralized compute makes possible. The procedural condition is that the pitch must be reviewed and approved before the start of development, which is valid for all tracks but takes on particular importance in this case.
+**Not eligible:** marginal or decorative use of Golem, duplication of previous work by the team or past builders, scope unfeasible in 4 weeks with 500 USD.
 
-### Eligible directions
+**Process:** pitch with more detail than A-D. Include justification for why it doesn't fit the defined tracks, explicit description of the parallelizable component, and references to similar prior work the builder has considered.
 
-Any project that requires non-trivially parallelizable distributed compute qualifies for this track. This includes tools and integrations that connect Golem with other ecosystems (Ethereum mainnet, IPFS, other Web3 protocols), exploratory demos showing protocol capabilities to a specialized technical audience, reusable libraries that facilitate the use of Golem for specific use cases, or artistic and experimental projects that use the network in a creative way.
-
-Proposals that use Golem only in a marginal or decorative way do not qualify for this track, nor do projects that duplicate work already done by the Golem team or by previous participants of the programme, nor projects of such a wide scope that they cannot be carried out in four weeks with a 500 USD bounty.
-
-### Specific process
-
-Since the track has no predefined directions, the Golem team requires more detail in the pitch to evaluate viability. It is recommended to include, in addition to the standard elements of the [pitch-template](./pitch_template.md), a brief section justifying why the project does not fit into tracks A to D, an explicit description of the parallelizable component, and any reference to similar prior work that the builder has considered.
-
-### Deliverables
-
-The deliverables are the same as for the specific tracks: public repository with functional code, clear README, execution metrics on Golem, and write-up for Discord. The specific form of the deliverable is agreed upon during pitch approval.
-
-### Success criterion
-
-Does the project concretely demonstrate a capability of Golem that no previous project in the programme had shown, and does it produce a public deliverable that the community can study, replicate or use?
+**Success criterion:** Does it concretely demonstrate a Golem capability that no previous programme project has shown, and produce a public deliverable that the community can study, replicate, or use?
 
 ---
 
 ## Common technical notes
 
-Beyond the particularities of each track, there are cross-cutting considerations that apply to any project in the programme and are worth keeping in mind from the design phase.
+- **Task granularity** — The minimum unit should run in the order of **seconds to minutes** per provider. Smaller = negotiation overhead erodes the benefit. Larger = wastes network capacity.
+- **Errors and retries** — Providers can fail or produce invalid outputs. task-executor ships with default retry logic; tune parameters and document decisions.
+- **Logging and observability** — Credible metrics require structured logs (timestamps, provider ID, costs, errors). Recommended: Node's `debug` package with namespace `golem-js:*`.
+- **task-executor vs golem-js** — task-executor when it's classic map-reduce. golem-js when you need fine market control, long sessions, or custom selection logic.
+- **Costs** — Testnet: negligible. Mainnet: typically units to tens of $GLM for programme scopes. Always document.
+- **Limitations** — Golem optimizes embarrassingly parallel workloads, not low-latency communication between providers. Specific GPUs may have variable availability. Very large transfers between requestor and providers add overhead.
 
-### Granularity of tasks
+---
 
-The correct design of the minimum unit of work is probably the most important technical decision of any project. Tasks too small generate negotiation and communication overhead that erodes the benefit of parallelization. Tasks too large waste the capacity of the network by concentrating work on few providers. As an initial heuristic, a reasonable unit of work runs on the order of seconds to minutes on an individual provider, not milliseconds or hours.
+## If something breaks
 
-### Error handling and retries
+Before asking on Discord, check the official troubleshooting docs — most frequent issues are already covered there.
 
-Providers in a decentralized network may fail, disconnect or produce invalid results. Any serious project on Golem must contemplate retry mechanisms, output validation, and eventually exclusion of problematic providers. @golem-sdk/task-executor includes default retry logic, but builders should verify that the parameters are appropriate to their use case and document the decisions taken.
+- **yagna, app-key, payments, and file transfer errors** — [JS Requestor Troubleshooting](https://docs.golem.network/docs/troubleshooting/js-requestor). Covers `ECONNREFUSED 127.0.0.1:7465` (yagna not running), `Invalid application key`, `Insufficient funds` (missing `yagna payment fund`), `There is no requestor account...` (missing `yagna payment init`), `Transfer error: send failed because receiver is gone` (missing `VOLUME` in the Dockerfile), and CORS errors when running from the browser.
+- **Images that won't build or broken transfers** — [Golem Images FAQ](https://docs.golem.network/docs/creators/javascript/guides/golem-images-faq) and [Building custom image](https://docs.golem.network/docs/creators/javascript/tutorials/building-custom-image). Reminder: any directory that will be written to or uploaded must be declared as `VOLUME` in the Dockerfile.
+- **Unexpected task-executor behavior** — [Task Model](https://docs.golem.network/docs/creators/javascript/guides/task-model) to understand the Activity lifecycle, retries, and provider selection.
+- **Payments and allocations** — [Payments model](https://docs.golem.network/docs/golem/payments) to understand pay-as-you-go, batching, and differences between testnet and mainnet.
 
-### Logging and observability
-
-The metrics of the final deliverable must be credible and reproducible. This requires structured logging during the execution of the project: timestamps of each task, provider identifiers, individual costs, captured errors. Deliverables that report metrics without supporting logs have less demonstrative value. It is recommended to use the `debug` package of Node.js or equivalent, configuring the `golem-js:*` namespaces to capture relevant SDK activity.
-
-### Choice between task-executor and golem-js
-
-As a general rule, task-executor is the right option when the problem fits a map-reduce pattern: independent tasks, the same type of computation, simple aggregation of results. golem-js directly is preferable when the project requires fine control over provider selection, custom market logic, management of long-running sessions, or integration with frameworks that are not compatible with the task-based model.
-
-### Costs and budget
-
-A typical project of the programme, executed mostly on testnet, has negligible compute costs. For projects on mainnet, costs vary depending on the volume of work and the providers selected, but generally remain in the order of single digits to tens of $GLM for the expected scopes. Builders running on mainnet should anticipate this cost and document it in the deliverable.
-
-### Limitations to keep in mind
-
-Golem is a general-purpose network, but there are certain use cases where its performance may be suboptimal. Workloads that require very low-latency communication between providers during execution are not ideal for Golem, given that the network optimises for embarrassingly parallel workloads rather than fine synchronization. Workloads that require specific GPUs may encounter limited or variable availability. Very large file transfers between requestor and providers introduce overhead that must be considered in the architecture.
-
-These limitations do not rule out any track of the programme, but they should be kept in mind when defining the scope of the project during the pitch phase.
+If the issue persists and isn't in the documentation, open a question in the builders channel of the [Golem Discord](https://discord.gg/golem) including: the failing command, exact error, yagna version (`yagna --version`), and network (testnet hoodi / mainnet polygon).
