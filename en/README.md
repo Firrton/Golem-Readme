@@ -6,7 +6,7 @@
 
 # Golem Community Builder Programme
 
-**Build on decentralized compute. Get paid in $GLM.**
+**Build on decentralised compute. Get paid in $GLM.**
 
 <br />
 
@@ -18,8 +18,7 @@
 <br />
 
 [**Builders Guide**](./docs/builders_guide.md) ·
-[**Pitch Template**](./docs/pitch_template.md) ·
-[**Submission Guide**](./docs/submission_guide.md) ·
+[**Apply**](https://forms.golem.network/golem-builders-programme) ·
 [**FAQ**](./FAQ.md)
 
 </div>
@@ -28,59 +27,29 @@
 
 ## Introduction
 
-The **Golem Community Builder Programme** is an open and ongoing initiative directed at developers who want to build functional projects on top of Golem Network, the decentralized open-source compute network operating since 2016.
+The **Golem Community Builder Programme** is an open and ongoing initiative directed at developers who want to build functional projects on top of Golem Network.
 
-Unlike a traditional hackathon, the programme does not run under deadline pressure or via pitch competitions. Its goal is to fund genuine technical work that demonstrates, in concrete terms, the capabilities of the protocol: projects that live on GitHub, generate conversation in the community and contribute to the decentralized compute ecosystem.
+Its goal is to fund genuine technical work that demonstrates, in concrete terms, the capabilities of the protocol: projects that live on GitHub, generate conversation in the community and contribute to the decentralised compute ecosystem.
 
-> Each approved project receives a bounty of **500 USD paid in $GLM**, with an estimated duration of two to four weeks of development.
-
----
-
-## About Golem Network
-
-Golem Network is a decentralized marketplace of computational resources. Developers can rent compute capacity coming from real machines distributed across the network, pay for its use in $GLM, and run parallelizable tasks at a scale that would be impractical on a single machine: video transcoding, machine learning model inference, scientific simulations, large-scale data processing, among many other use cases.
-
-The technical proposition is straightforward: if a task takes ten minutes on one machine, Golem allows it to be distributed across a hundred providers and completed in a fraction of the time. The network is permissionless, meaning anyone can consume compute as a requestor or contribute capacity as a provider, with no intermediaries or prior authorization.
-
-#### Official resources
-
-| Resource | Link |
-|----------|------|
-| Technical documentation | [docs.golem.network](https://docs.golem.network) |
-| Official repositories | [github.com/golemfactory](https://github.com/golemfactory) |
-| $GLM token information | [golem.network/glm](https://golem.network/glm) |
-| Discord community | [discord.gg/golem](https://discord.gg/golem) |
-
----
-
-## Why this programme exists
-
-Golem is a mature protocol with a solid technical case, but a good portion of its potential is still not adequately documented through concrete projects. The most effective way to show what the protocol does is not through marketing material, but through functional code built by real developers, with public repositories, reproducible metrics and clear explanations.
-
-This programme exists to close that gap. It funds builders who are willing to explore the protocol in depth and publish the result transparently, generating resources that both the Golem community and new developers can use as reference.
+> Each approved project receives a bounty of **500 USD paid in $GLM**, with an estimated completion time of two to four weeks of development.
 
 ---
 
 ## Who it is for
 
-The programme is open to three main profiles:
+If you can build it, you can apply. The programme is open to any developer with the technical capacity to ship a real project — backend engineers, ML practitioners, distributed systems builders, Ethereum developers, and anyone else with relevant hands-on experience.
 
-#### 🛠️ Web3 builders with prior Golem experience
-People who already know the protocol and want to build a more ambitious project with financial backing and direct support from the team.
+Web2 or Web3 background, Golem veteran or first-timer — it does not matter. What matters is that you can scope, build, document, and deliver.
 
-#### 🌐 Web3 builders without Golem experience
-Developers active in the Ethereum ecosystem or other decentralized networks who are exploring decentralized compute for the first time. For this profile, the programme also works as paid onboarding to the protocol.
-
-#### 💻 Web2 builders
-Developers with experience in backend, distributed systems, machine learning, media processing, or other relevant technical domains who want to experiment with a first project on decentralized infrastructure.
-
-> No prior experience with Golem is required. What is required is the technical capacity to build, willingness to document the work and willingness to publish the result openly.
+> No prior Golem experience required.
 
 ---
 
 ## What participants build
 
-The programme proposes five tracks oriented to different kinds of technical demonstrations. The tracks are not rigid: they work as starting points and as reference for those who prefer a defined frame. Anyone with their own idea can propose it through Track E, subject to prior approval by the team.
+The programme proposes five tracks oriented to different kinds of technical demonstrations. The tracks are not rigid: they work as starting points and as reference for those who prefer a defined frame.
+
+Anyone with their own idea can propose it through Track E, subject to prior approval by the team.
 
 <div align="center">
 
@@ -94,44 +63,38 @@ The programme proposes five tracks oriented to different kinds of technical demo
 
 </div>
 
-The full description of each track, including suggested technical directions, examples of previous projects and expected deliverables, can be found in the [**Builders Guide**](./docs/builders_guide.md).
+The full description of each track, including suggested technical directions, can be found in the [**Builders Guide**](./docs/builders_guide.md).
 
 ---
 
 ## Participation process
 
-The programme operates under a five-stage flow designed to minimize friction for both the builder and the Golem team.
-
 ```
-  ┌───────────┐    ┌──────────┐    ┌──────────┐    ┌─────────────┐    ┌──────────────┐
-  │  1. Read  │ →  │ 2. Pitch │ →  │ 3. Review│ →  │  4. Build   │ →  │  5. Deliver  │
-  │   Guide   │    │  Submit  │    │ Approval │    │  & Iterate  │    │   & Get Paid │
-  └───────────┘    └──────────┘    └──────────┘    └─────────────┘    └──────────────┘
+  ┌──────────────┐    ┌─────────────┐    ┌──────────────┐    ┌─────────────┐    ┌──────────────┐
+  │  1. Read &   │ →  │  2. Apply   │ →  │  3. Review   │ →  │  4. Build   │ →  │  5. Deliver  │
+  │  Get an idea │    │  via form   │    │  & Agree     │    │             │    │  & Get Paid  │
+  └──────────────┘    └─────────────┘    └──────────────┘    └─────────────┘    └──────────────┘
 ```
 
-### 1. Read the Builders Guide
+### 1. Read this README and the Builders Guide
 
-The first step is to review the [Builders Guide](./docs/builders_guide.md). This reading allows the builder to identify the right track and calibrate the scope of the project.
+Read this document and the [Builders Guide](./docs/builders_guide.md), then come up with an idea. The Guide describes the five tracks in detail and includes suggested technical directions to help you scope a project.
 
-### 2. Pitch submission
+### 2. Apply via the form
 
-The builder presents their proposal through the **official pitch form**: *[pending]*.
+Submit your idea through the [**application form**](https://forms.golem.network/golem-builders-programme). Include your chosen track, a brief description of the project, your technical approach, and any relevant prior experience.
 
-The proposal should follow the structure of the [pitch template](./docs/pitch_template.md) and include, at minimum: chosen track, project description, technical scope, work plan, deliverables and relevant prior experience. One page is usually enough.
+### 3. Review and scoping
 
-### 3. Review and approval
+The Golem team reviews applications on a rolling basis. If your idea is a good fit, we will reach out to discuss the specifics and agree on scope, milestones, and deliverables. Projects that are not a fit will receive a short note explaining why.
 
-The Golem team reviews each pitch internally and responds with one of three possibilities: direct approval, request for scope adjustments, or rejection with justification.
+### 4. Build
 
-Once the pitch is approved, the project's scope, deliverables and associated bounty are formally confirmed.
+Once approved, you start building on your own public GitHub repository. The Golem team is available on Discord throughout for technical questions and progress reviews. The typical window is **two to four weeks**, adjusted to the agreed scope.
 
-### 4. Development
+### 5. Deliver and get paid
 
-The builder develops the project on their own public GitHub repository. During this stage, the Golem team is available on Discord to resolve technical doubts, review progress and orient on the use of the protocol. The typical development window is **two to four weeks**, adjustable to the complexity agreed in the pitch.
-
-### 5. Delivery and payment
-
-Upon completion of development, the builder delivers the project following the [submission guide](./docs/submission_guide.md). The delivery includes the public repository with a clear README, real execution metrics on Golem and a brief community-oriented write-up. Once the deliverable is validated, the bounty is transferred directly to the builder's wallet in **$GLM**.
+Submit all agreed deliverables. Once the Golem team validates them, the bounty is transferred directly to your wallet in **$GLM**.
 
 ---
 
@@ -147,18 +110,16 @@ The programme works as a structured collaboration with clear commitments on both
 <tr>
 <td valign="top">
 
-- Per-project funding with no quotas or participation limits
 - Direct access to the technical team for consultations, reviews and debugging
-- Co-promotion of the finalized project through official channels and partner communities
-- Scope flexibility to favour technical quality over mechanical compliance with a track
+- Co-promotion of the finalised project through official channels and partner communities
 
 </td>
 <td valign="top">
 
 - Genuine commitment to delivering the project within the agreed scope
 - Code published on GitHub under an open license with clear documentation
-- Proactive communication during development, especially when blockers or scope adjustments arise
 - A final write-up that allows other developers to understand and reproduce the work
+- A short demo video (2–3 minutes) showing the project in action, for amplification on Golem channels
 
 </td>
 </tr>
@@ -168,12 +129,11 @@ The programme works as a structured collaboration with clear commitments on both
 
 ## Repository resources
 
-| Document | Purpose |
-|----------|---------|
-| [📘 Builders Guide](./docs/builders_guide.md) | Full description of the five tracks, examples and deliverables |
-| [📝 Pitch Template](./docs/pitch_template.md) | Recommended template for structuring the pitch |
-| [📦 Submission Guide](./docs/submission_guide.md) | Formal requirements for project delivery |
-| [❓ FAQ](./FAQ.md) | Frequently asked questions about the programme |
+| Document                                                                     | Purpose                                                        |
+| ---------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| [📘 Builders Guide](./docs/builders_guide.md)                                | Full description of the five tracks, examples and deliverables |
+| [📨 Apply](https://forms.golem.network/golem-builders-programme)              | Submit your idea via the application form                      |
+| [❓ FAQ](./FAQ.md)                                                            | Frequently asked questions about the programme                 |
 
 > 🇪🇸 **Versión en español:** [`/es/README.md`](../es/README.md) · 🇧🇷 **Versão em português:** [`/pt/README.md`](../pt/README.md)
 
@@ -181,17 +141,26 @@ The programme works as a structured collaboration with clear commitments on both
 
 ## Previous projects
 
-As projects are completed within the programme, this section will be updated with links to the repositories and descriptions of each one.
+As projects complete, this section grows. Below are the first entries.
 
-As a reference prior to the programme, [**gScribe**](https://gscribe.ai/) is an example of a project built on top of Golem that demonstrates the use case of parallel audio transcription via Whisper distributed across multiple providers.
+| | |
+|---|---|
+| **[gScribe](https://gscribe.ai/)** · Track A — Parallel Media Processing<br />Parallel audio transcription using Whisper distributed across multiple Golem providers. A working reference for what the programme produces. | |
 
 ---
 
-## Partner communities
+## About Golem Network
 
-The programme is developed in collaboration with builder communities in Latin America and other regions. Partner communities help spread the programme among their developers, and each project finalized by a builder from their community receives co-promotion across their channels.
+Golem Network is a decentralised marketplace of computational resources. Developers can rent compute capacity coming from real machines distributed across the network, pay for its use in $GLM, and run parallelisable tasks at a scale that would be impractical on a single machine: video transcoding, machine learning model inference, scientific simulations, large-scale data processing, among many other use cases.
 
-> *Currently involved communities: to be confirmed.*
+#### Official resources
+
+| Resource | Link |
+|----------|------|
+| Technical documentation | [docs.golem.network](https://docs.golem.network) |
+| Official repositories | [github.com/golemfactory](https://github.com/golemfactory) |
+| $GLM token information | [golem.network/glm](https://golem.network/glm) |
+| Discord community | [discord.gg/golem](https://discord.gg/golem) |
 
 ---
 

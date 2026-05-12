@@ -4,22 +4,21 @@
 
 <br /><br />
 
-# Golem Community Builder Programme
+# Programa Golem Community Builder
 
-**Construir sobre compute descentralizado. Recibir bounties en $GLM.**
+**Construye sobre computación descentralizada. Cobra en $GLM.**
 
 <br />
 
-[![Bounty](https://img.shields.io/badge/Bounty-500%20USD%20en%20%24GLM-0F1FE3?style=for-the-badge)](#proceso-de-participación)
+[![Bounty](https://img.shields.io/badge/Bounty-500%20USD%20in%20%24GLM-0F1FE3?style=for-the-badge)](#proceso-de-participación)
 [![Status](https://img.shields.io/badge/Status-Open%20%26%20Ongoing-22C55E?style=for-the-badge)](#)
 [![License](https://img.shields.io/badge/License-Open%20Source-1E40AF?style=for-the-badge)](#)
 [![Discord](https://img.shields.io/badge/Discord-Golem%20Community-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/golem)
 
 <br />
 
-[**Builders Guide**](./docs/guia_builders.md) ·
-[**Pitch Template**](./docs/pitch_template.md) ·
-[**Submission Guide**](./docs/submission-guide.md) ·
+[**Guía para Builders**](./docs/builders_guide.md) ·
+[**Aplicar**](https://forms.golem.network/golem-builders-programme) ·
 [**FAQ**](./FAQ.md)
 
 </div>
@@ -28,137 +27,99 @@
 
 ## Introducción
 
-El **Golem Community Builder Programme** es una iniciativa abierta y continua dirigida a desarrolladores que deseen construir proyectos funcionales sobre Golem Network, la red descentralizada de compute open-source operativa desde 2016.
+El **Programa Golem Community Builder** es una iniciativa abierta y continua dirigida a desarrolladores que quieren construir proyectos funcionales sobre Golem Network.
 
-A diferencia de un hackathon tradicional, el programa no opera bajo presión de fechas límite ni mediante competencias de pitch. Su objetivo es financiar trabajo técnico genuino que demuestre, de manera concreta, las capacidades del protocolo: proyectos que vivan en GitHub, generen conversación en la comunidad y contribuyan al ecosistema de compute descentralizado.
+Su objetivo es financiar trabajo técnico genuino que demuestre, de forma concreta, las capacidades del protocolo: proyectos que vivan en GitHub, generen conversación en la comunidad y contribuyan al ecosistema de computación descentralizada.
 
-> Cada proyecto aprobado recibe un bounty de **500 USD pagados en $GLM**, con una duración estimada de entre dos y cuatro semanas de desarrollo.
-
----
-
-## Sobre Golem Network
-
-Golem Network es un marketplace descentralizado de recursos computacionales. Los desarrolladores pueden alquilar capacidad de cómputo proveniente de máquinas reales distribuidas en toda la red, pagar por su uso en $GLM y ejecutar tareas paralelizables a una escala que sería impráctica sobre una sola máquina: transcodificación de video, inferencia de modelos de machine learning, simulaciones científicas, procesamiento masivo de datos, entre otros casos de uso.
-
-La propuesta técnica es directa: si una tarea toma diez minutos en una máquina, Golem permite distribuirla a través de cien providers y completarla en una fracción del tiempo. La red es permissionless, lo que significa que cualquier persona puede consumir compute como requestor o aportar capacidad como provider, sin intermediarios ni autorizaciones previas.
-
-#### Recursos oficiales
-
-| Recurso | Enlace |
-|---------|--------|
-| Documentación técnica | [docs.golem.network](https://docs.golem.network) |
-| Repositorios oficiales | [github.com/golemfactory](https://github.com/golemfactory) |
-| Información del token $GLM | [golem.network/glm](https://golem.network/glm) |
-| Comunidad Discord | [discord.gg/golem](https://discord.gg/golem) |
+> Cada proyecto aprobado recibe una recompensa de **500 USD pagados en $GLM**, con un tiempo de desarrollo estimado de dos a cuatro semanas.
 
 ---
 
-## Por qué existe este programa
+## Para quién es
 
-Golem es un protocolo maduro con un caso técnico sólido, pero buena parte de su potencial sigue sin estar adecuadamente documentado a través de proyectos concretos. La forma más efectiva de mostrar lo que el protocolo hace no es mediante material de marketing, sino mediante código funcional construido por desarrolladores reales, con repositorios públicos, métricas reproducibles y explicaciones claras.
+Si puedes construirlo, puedes aplicar. El programa está abierto a cualquier desarrollador con la capacidad técnica de entregar un proyecto real — ingenieros de backend, profesionales de ML, builders de sistemas distribuidos, desarrolladores de Ethereum, y cualquier persona con experiencia práctica relevante.
 
-Este programa existe para acortar esa distancia. Financia builders que estén dispuestos a explorar el protocolo en profundidad y a publicar el resultado de manera transparente, generando recursos que tanto la comunidad de Golem como nuevos desarrolladores podrán utilizar como referencia.
+Perfil Web2 o Web3, veterano de Golem o primera vez — no importa. Lo que importa es que puedas definir el alcance, construir, documentar y entregar.
 
----
-
-## A quién está dirigido
-
-El programa está abierto a tres perfiles principales:
-
-#### 🛠️ Builders de Web3 con experiencia previa en Golem
-Personas que ya conocen el protocolo y desean construir un proyecto más ambicioso con respaldo financiero y soporte directo del equipo.
-
-#### 🌐 Builders de Web3 sin experiencia en Golem
-Desarrolladores activos en el ecosistema de Ethereum u otras redes descentralizadas que estén explorando compute descentralizado por primera vez. Para este perfil, el programa funciona también como onboarding pago al protocolo.
-
-#### 💻 Builders de Web2
-Desarrolladores con experiencia en backend, sistemas distribuidos, machine learning, procesamiento de medios u otros dominios técnicos relevantes que quieran experimentar con un primer proyecto sobre infraestructura descentralizada.
-
-> No se requiere experiencia previa con Golem. Se requiere capacidad técnica para construir, voluntad de documentar el trabajo y disposición para publicar el resultado en abierto.
+> No se requiere experiencia previa con Golem.
 
 ---
 
 ## Qué construyen los participantes
 
-El programa propone cinco tracks orientados a diferentes tipos de demostraciones técnicas. Los tracks no son rígidos: funcionan como puntos de partida y como referencia para quienes prefieren un marco definido. Quienes tengan una idea propia pueden proponerla a través del Track E, sujeta a aprobación previa por parte del equipo.
+El programa propone cinco tracks orientados a distintos tipos de demostraciones técnicas. Los tracks no son rígidos: funcionan como puntos de partida y como referencia para quienes prefieren un marco definido.
+
+Cualquier persona con una idea propia puede proponerla a través del Track E, sujeto a aprobación previa del equipo.
 
 <div align="center">
 
-| Track | Foco principal |
-|:-----:|:---------------|
-| **A** · [Parallel Media Processing](./docs/guia_builders.md#track-a) | Procesamiento paralelo de archivos de audio y video sobre múltiples providers |
-| **B** · [Compute-Intensive Simulation](./docs/guia_builders.md#track-b) | Simulaciones numéricas, Monte Carlo y cálculos científicos a escala |
-| **C** · [Provider Reputation & Benchmarking](./docs/guia_builders.md#track-c) | Herramientas de medición, scoring y benchmarking de providers |
-| **D** · [Chess Engine / Game AI at Scale](./docs/guia_builders.md#track-d) | Inteligencia artificial de juegos como demostración legible de paralelismo |
-| **E** · [Open Track](./docs/guia_builders.md#track-e) | Propuesta libre del builder, validada antes del inicio |
+| Track | Enfoque principal |
+|:-----:|:------------------|
+| **A** · [Procesamiento Paralelo de Media](./docs/builders_guide.md#track-a) | Procesamiento paralelo de archivos de audio y vídeo en múltiples proveedores |
+| **B** · [Simulación de Alto Cómputo](./docs/builders_guide.md#track-b) | Simulaciones numéricas, Monte Carlo y computación científica a escala |
+| **C** · [Reputación y Benchmarking de Proveedores](./docs/builders_guide.md#track-c) | Herramientas de medición, puntuación y benchmarking para proveedores |
+| **D** · [Motor de Ajedrez / IA de Juegos a Escala](./docs/builders_guide.md#track-d) | IA de juegos como demostración legible de paralelismo |
+| **E** · [Track Abierto](./docs/builders_guide.md#track-e) | Propuesta propia del builder, validada antes del inicio |
 
 </div>
 
-La descripción completa de cada track, incluyendo direcciones técnicas sugeridas, ejemplos de proyectos previos y entregables esperados, se encuentra en el [**Builders Guide**](./docs/guia_builders.md).
+La descripción completa de cada track, incluyendo direcciones técnicas sugeridas, se encuentra en la [**Guía para Builders**](./docs/builders_guide.md).
 
 ---
 
 ## Proceso de participación
 
-El programa opera bajo un flujo de cinco etapas diseñado para minimizar fricción tanto para el builder como para el equipo de Golem.
-
 ```
-  ┌───────────┐    ┌──────────┐    ┌──────────┐    ┌─────────────┐    ┌──────────────┐
-  │  1. Read  │ →  │ 2. Pitch │ →  │ 3. Review│ →  │  4. Build   │ →  │  5. Deliver  │
-  │   Guide   │    │  Submit  │    │ Approval │    │  & Iterate  │    │   & Get Paid │
-  └───────────┘    └──────────┘    └──────────┘    └─────────────┘    └──────────────┘
+  ┌──────────────┐    ┌─────────────┐    ┌──────────────┐    ┌─────────────┐    ┌──────────────┐
+  │  1. Leer y   │ →  │  2. Aplicar │ →  │  3. Revisión │ →  │  4. Construir│ →  │  5. Entregar │
+  │  tener idea  │    │  via form   │    │  & Acuerdo   │    │             │    │  & Cobrar    │
+  └──────────────┘    └─────────────┘    └──────────────┘    └─────────────┘    └──────────────┘
 ```
 
-### 1. Lectura del Builders Guide
+### 1. Leer este README y la Guía para Builders
 
-El primer paso consiste en revisar el [Builders Guide](./docs/guia_builders.md). Esta lectura permite identificar el track adecuado y calibrar el alcance del proyecto.
+Lee este documento y la [Guía para Builders](./docs/builders_guide.md), y luego define una idea. La Guía describe los cinco tracks en detalle e incluye direcciones técnicas sugeridas para ayudarte a acotar el proyecto.
 
-### 2. Envío del pitch
+### 2. Aplicar mediante el formulario
 
-El builder presenta su propuesta a través del **formulario oficial de pitch**: *[pendiente]*.
+Envía tu idea a través del [**formulario de aplicación**](https://forms.golem.network/golem-builders-programme). Incluye el track elegido, una breve descripción del proyecto, el enfoque técnico y cualquier experiencia previa relevante.
 
-La propuesta debe seguir la estructura de la [plantilla de pitch](./docs/pitch_template.md) e incluir, como mínimo: track elegido, descripción del proyecto, alcance técnico, plan de trabajo, entregables y experiencia previa relevante. Una página suele ser suficiente.
+### 3. Revisión y definición de alcance
 
-### 3. Revisión y aprobación
+El equipo de Golem revisa las aplicaciones de forma continua. Si la idea encaja, se pondrán en contacto para discutir los detalles y acordar el alcance, los hitos y los entregables. Los proyectos que no encajen recibirán una nota breve explicando el motivo.
 
-El equipo de Golem revisa cada pitch internamente y responde con una de tres posibilidades: aprobación directa, solicitud de ajustes en el alcance, o rechazo con justificación.
+### 4. Construir
 
-Una vez aprobado el pitch, se confirma formalmente el alcance del proyecto, los entregables y el bounty asociado.
+Una vez aprobado, el trabajo comienza en un repositorio público de GitHub. El equipo de Golem está disponible en Discord durante todo el proceso para preguntas técnicas y revisiones de avance. El plazo habitual es de **dos a cuatro semanas**, ajustado al alcance acordado.
 
-### 4. Desarrollo
+### 5. Entregar y cobrar
 
-El builder desarrolla el proyecto en su propio repositorio público de GitHub. Durante esta etapa, el equipo de Golem está disponible en Discord para resolver dudas técnicas, revisar avances y orientar sobre el uso del protocolo. El plazo típico de desarrollo es de **dos a cuatro semanas**, ajustable según la complejidad acordada en el pitch.
-
-### 5. Entrega y pago
-
-Al finalizar el desarrollo, el builder entrega su proyecto siguiendo el [submission guide](./docs/submission-guide.md). La entrega incluye el repositorio público con README claro, métricas reales de ejecución sobre Golem y un breve write-up explicativo orientado a la comunidad. Una vez validado el entregable, el bounty se transfiere directamente a la wallet del builder en **$GLM**.
+Entrega todos los entregables acordados. Una vez que el equipo de Golem los valide, la recompensa se transfiere directamente a la wallet en **$GLM**.
 
 ---
 
 ## Qué aporta Golem y qué se espera del builder
 
-El programa funciona como una colaboración estructurada con compromisos claros por ambas partes.
+El programa funciona como una colaboración estructurada con compromisos claros de ambas partes.
 
 <table>
 <tr>
-<th width="50%">🟦 Lo que aporta Golem Network</th>
-<th width="50%">🟨 Lo que se espera del builder</th>
+<th width="50%">🟦 Qué aporta Golem Network</th>
+<th width="50%">🟨 Qué se espera del builder</th>
 </tr>
 <tr>
 <td valign="top">
 
-- Financiamiento por proyecto sin cuotas ni límites de participación
-- Acceso directo al equipo técnico para consultas, revisiones y debugging
+- Acceso directo al equipo técnico para consultas, revisiones y depuración
 - Co-promoción del proyecto finalizado a través de canales oficiales y comunidades partner
-- Flexibilidad de alcance para favorecer la calidad técnica por encima del cumplimiento mecánico de un track
 
 </td>
 <td valign="top">
 
-- Compromiso real con la entrega del proyecto en el alcance acordado
-- Código publicado en GitHub bajo licencia abierta con documentación clara
-- Comunicación proactiva durante el desarrollo, especialmente si surgen bloqueos o ajustes
-- Write-up final que permita a otros desarrolladores entender y reproducir el trabajo
+- Compromiso genuino de entregar el proyecto dentro del alcance acordado
+- Código publicado en GitHub bajo una licencia abierta con documentación clara
+- Un write-up final que permita a otros desarrolladores entender y reproducir el trabajo
+- Un vídeo de demostración breve (2–3 minutos) mostrando el proyecto en acción, para amplificación en los canales de Golem
 
 </td>
 </tr>
@@ -168,12 +129,11 @@ El programa funciona como una colaboración estructurada con compromisos claros 
 
 ## Recursos del repositorio
 
-| Documento | Propósito |
-|-----------|-----------|
-| [📘 Builders Guide](./docs/guia_builders.md) | Descripción completa de los cinco tracks, ejemplos y entregables |
-| [📝 Pitch Template](./docs/pitch_template.md) | Plantilla recomendada para estructurar el pitch |
-| [📦 Submission Guide](./docs/submission-guide.md) | Requisitos formales para la entrega del proyecto |
-| [❓ FAQ](./FAQ.md) | Preguntas frecuentes sobre el programa |
+| Documento                                                                     | Propósito                                                              |
+| ----------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| [📘 Guía para Builders](./docs/builders_guide.md)                             | Descripción completa de los cinco tracks, ejemplos y entregables       |
+| [📨 Aplicar](https://forms.golem.network/golem-builders-programme)            | Envía tu idea mediante el formulario de aplicación                     |
+| [❓ FAQ](./FAQ.md)                                                             | Preguntas frecuentes sobre el programa                                 |
 
 > 🇬🇧 **English version:** [`/en/README.md`](../en/README.md) · 🇧🇷 **Versão em português:** [`/pt/README.md`](../pt/README.md)
 
@@ -181,23 +141,32 @@ El programa funciona como una colaboración estructurada con compromisos claros 
 
 ## Proyectos anteriores
 
-A medida que se completen proyectos dentro del programa, esta sección se actualizará con enlaces a los repositorios y descripciones de cada uno.
+A medida que los proyectos se completan, esta sección crece. A continuación, las primeras entradas.
 
-Como referencia previa al programa, [**gScribe**](https://gscribe.ai/) es un ejemplo de proyecto construido sobre Golem que demuestra el caso de uso de transcripción paralela de audio mediante Whisper distribuido entre múltiples providers.
+| | |
+|---|---|
+| **[gScribe](https://gscribe.ai/)** · Track A — Procesamiento Paralelo de Media<br />Transcripción de audio en paralelo usando Whisper distribuido entre múltiples proveedores de Golem. Una referencia funcional de lo que produce el programa. | |
 
 ---
 
-## Comunidades partner
+## Sobre Golem Network
 
-El programa se desarrolla en colaboración con comunidades de builders en América Latina y otras regiones. Las comunidades partner ayudan a difundir el programa entre sus desarrolladores, y cada proyecto finalizado por un builder de su comunidad recibe co-promoción en sus canales.
+Golem Network es un mercado descentralizado de recursos computacionales. Los desarrolladores pueden alquilar capacidad de cómputo de máquinas reales distribuidas por la red, pagar por su uso en $GLM, y ejecutar tareas paralelizables a una escala que sería impracticable en una sola máquina: transcodificación de vídeo, inferencia de modelos de aprendizaje automático, simulaciones científicas, procesamiento de datos a gran escala, entre muchos otros casos de uso.
 
-> *Comunidades actualmente involucradas: por confirmar.*
+#### Recursos oficiales
+
+| Recurso | Enlace |
+|---------|--------|
+| Documentación técnica | [docs.golem.network](https://docs.golem.network) |
+| Repositorios oficiales | [github.com/golemfactory](https://github.com/golemfactory) |
+| Información del token $GLM | [golem.network/glm](https://golem.network/glm) |
+| Comunidad en Discord | [discord.gg/golem](https://discord.gg/golem) |
 
 ---
 
 ## Contacto
 
-Para consultas sobre el programa antes de enviar un pitch, el canal recomendado es el Discord oficial de Golem en el canal de builders:
+Para preguntas sobre el programa antes de enviar una propuesta, el canal recomendado es el Discord oficial de Golem, en el canal de builders:
 
 <div align="center">
 
@@ -211,7 +180,7 @@ Para consultas sobre el programa antes de enviar un pitch, el canal recomendado 
 
 <img src="../assets/golem-logo.png" alt="Golem" width="60" />
 
-**Powered by $GLM · Built for Ethereum · Open to everyone**
+**Impulsado por $GLM · Construido para Ethereum · Abierto a todos**
 
 <sub>© Golem Network · Community Builder Programme</sub>
 
