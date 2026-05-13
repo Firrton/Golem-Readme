@@ -1,32 +1,26 @@
 # Perguntas Frequentes
 
-Documento de referência que reúne as perguntas mais habituais sobre o **Golem Community Builder Programme**. É concebido como complemento ao restante da documentação do repositório e como ponto de partida antes de canalizar consultas específicas à equipe do programa ou à comunidade técnica da Golem.
-
-As respostas aqui incluídas refletem a política vigente do programa no momento da última atualização do documento. Para situações particulares não contempladas no FAQ, os canais de comunicação oficiais são detalhados ao final do documento.
-
----
-
 ## Sobre o programa
 
 **O que é exatamente o Golem Community Builder Programme?**
 
-O programa é uma iniciativa aberta e contínua que financia projetos técnicos construídos sobre a Golem Network. Cada projeto aprovado recebe um bounty de 500 USD pagos em $GLM, com duração estimada entre duas e quatro semanas de desenvolvimento. Diferentemente de um hackathon tradicional, o programa não opera sob pressão de prazos finais nem por meio de competições de pitch, mas sim financia trabalho técnico genuíno sobre o protocolo. A descrição completa do programa encontra-se no [README](./README.md).
+O programa é uma iniciativa aberta e contínua que financia projectos técnicos construídos sobre a Golem Network. Cada projecto aprovado recebe um bounty de 500 USD pagos em $GLM, com duração estimada entre duas e quatro semanas de desenvolvimento. A descrição completa do programa encontra-se no [README](./README.md).
 
 **Em que se diferencia este programa de um hackathon?**
 
-A diferença principal é estrutural. Um hackathon tem data de início e fim, exige aos participantes completar o trabalho dentro de um prazo comprimido e costuma entregar prêmios apenas aos projetos vencedores após uma competição. Este programa não tem deadline fixo, opera de forma contínua, e paga o bounty completo a todo projeto aprovado que cumpra os entregáveis acordados. A filosofia é financiar trabalho técnico de qualidade em vez de produzir competição entre builders.
+O programa é aberto e sem prazo: não há competição de pitch nem runners-up. Os builders submetem as suas próprias ideias através do formulário de candidatura. A equipa da Golem revê as candidaturas de forma contínua e selecciona as mais sólidas. Para os projectos seleccionados, o builder e a equipa acordam juntos o âmbito — e só depois começa o desenvolvimento.
 
 **Quem pode participar?**
 
-O programa está aberto a desenvolvedores Web3 com ou sem experiência prévia em Golem, assim como a desenvolvedores Web2 que estejam explorando compute descentralizado pela primeira vez. Não são exigidas credenciais formais nem afiliação a uma organização específica. É exigida capacidade técnica para construir o projeto proposto e disposição para publicar o resultado sob licença aberta.
+Qualquer programador com capacidade técnica para entregar um projecto real: perfil Web2 ou Web3, com ou sem experiência prévia em Golem.
 
 **É possível formar equipes para participar?**
 
-Sim. O programa aceita tanto builders individuais quanto equipes sem limite explícito de tamanho. As equipes devem designar um único ponto de contato para a comunicação com a equipe da Golem e definir internamente como distribuirão o bounty entre seus membros. O bounty é transferido a um único endereço de wallet, e a distribuição posterior está fora do escopo do programa.
+Sim. O programa aceita tanto builders individuais como equipas sem limite de tamanho. As equipas devem designar um único ponto de contacto para a comunicação com a equipa da Golem e definir internamente como distribuirão o bounty entre os seus membros. O bounty é transferido para um único endereço de wallet, e a distribuição posterior está fora do âmbito do programa.
 
 **Posso participar em múltiplos projetos ao longo do tempo?**
 
-A participação em múltiplos projetos é avaliada caso a caso pela equipe do programa. Builders que tenham completado satisfatoriamente um projeto prévio podem ser convidados ou autorizados a apresentar novas propostas, dependendo da qualidade do trabalho prévio, do intervalo transcorrido e da disponibilidade de vagas no programa. A política busca equilibrar o reconhecimento ao trabalho recorrente de builders comprometidos com a abertura do programa a novos participantes.
+Um projecto por equipa de cada vez. Após a validação da entrega e o pagamento do bounty, a mesma equipa pode candidatar-se novamente com uma nova ideia.
 
 ---
 
@@ -34,7 +28,7 @@ A participação em múltiplos projetos é avaliada caso a caso pela equipe do p
 
 **Preciso ter experiência prévia com Golem para participar?**
 
-Não. O programa está explicitamente desenhado para acolher tanto builders com experiência prévia quanto desenvolvedores que estão se encontrando com Golem pela primeira vez. Para builders novos, o [Builders Guide](./docs/guia_builders.md) oferece direções de projeto com complexidade estimada para facilitar a escolha inicial.
+Não é necessária experiência prévia com Golem. A equipe está disponível no Discord para orientar sobre o protocolo durante o desenvolvimento.
 
 **Que SDK devo usar para construir meu projeto?**
 
@@ -42,39 +36,35 @@ O caminho principal recomendado é `@golem-sdk/task-executor`, uma biblioteca em
 
 **Posso trabalhar em testnet ou tenho que usar mainnet?**
 
-Ambas as redes são válidas para entrega do programa. A testnet, que atualmente opera sobre a rede hoodi, é o ambiente recomendado para a maioria dos projetos, dado que permite executar trabalho real sobre a rede sem custo real. A mainnet é apropriada quando o projeto requer demonstrar comportamento econômico real ou integrações com sistemas de produção. A escolha deve ser explicitada no pitch.
+O esperado por defeito é que os builders iterem em testnet (actualmente `hoodi`). Não há qualquer expectativa de mainnet. Se a mainnet for genuinamente necessária para um projecto, isso é acordado entre a equipa seleccionada e a equipa da Golem no momento do scoping.
 
 **Há suporte para linguagens diferentes de JavaScript e TypeScript?**
 
-O stack da Golem conta com SDKs em outras linguagens, mas a documentação mais atualizada e os exemplos oficiais concentram-se no ecossistema JavaScript. Os builders que prefiram trabalhar em outra linguagem podem fazê-lo, mas devem levar em conta que a curva de aprendizado e o suporte disponível são menores. Recomenda-se discutir essa decisão durante a fase de pitch.
+O stack da Golem conta com SDKs em outras linguagens, mas a documentação mais atualizada e os exemplos oficiais concentram-se no ecossistema JavaScript. Os builders que prefiram trabalhar em outra linguagem podem fazê-lo, mas devem levar em conta que a curva de aprendizado e o suporte disponível são menores. Recomenda-se discutir essa decisão durante a fase de candidatura.
 
 **Posso usar GPU em meu projeto?**
 
-A Golem oferece acesso a providers com GPU, embora a disponibilidade possa ser variável conforme o momento e o tipo de hardware exigido. Os projetos que dependam criticamente de GPU devem mencionar essa dependência no pitch para que a equipe possa confirmar a viabilidade antes da aprovação.
+A Golem oferece acesso a providers com GPU, embora a disponibilidade possa ser variável conforme o momento e o tipo de hardware exigido. Os projetos que dependam criticamente de GPU devem mencionar essa dependência no formulário de candidatura para que a equipe possa confirmar a viabilidade antes da aprovação.
 
 ---
 
 ## Sobre o processo do programa
 
-**Quanto tempo a equipe leva para revisar um pitch?**
+**Quanto tempo demora a equipa a responder após a candidatura?**
 
-O prazo concreto de resposta depende do volume de pitches recebidos a cada momento. A equipe do programa busca responder com a maior agilidade razoável e notifica o builder assim que a decisão é tomada.
+A equipa da Golem revê as candidaturas de forma contínua, pelo que não há uma janela de resposta fixa. Serás notificado assim que for tomada uma decisão. Se a ideia se enquadrar no programa, a equipa entra em contacto para discutir o âmbito e os marcos antes de o desenvolvimento começar.
 
-**O que acontece se meu pitch for rejeitado?**
+**O que acontece se a minha candidatura for rejeitada?**
 
-As decisões sobre pitches rejeitados ficam a critério da equipe do programa. Em alguns casos, a rejeição pode ser acompanhada de comentários específicos que permitem ao builder ajustar a proposta e reenviá-la. Em outros casos, pode-se recomendar ao builder explorar uma direção alternativa ou esperar antes de apresentar uma nova proposta. A decisão específica é comunicada diretamente ao builder no momento da rejeição.
+As decisões sobre candidaturas rejeitadas ficam ao critério da equipa do programa. Procuramos partilhar feedback quando possível, mas dado o volume de candidaturas não podemos garantir que isso aconteça em todos os casos.
 
 **Posso modificar o escopo do projeto durante o desenvolvimento?**
 
-Mudanças menores no escopo, motivadas por descobertas técnicas durante o desenvolvimento, são habituais e aceitáveis sempre que sejam comunicadas à equipe do programa. Mudanças substanciais que alterem a natureza do projeto requerem acordo explícito com a equipe antes de prosseguir. A comunicação proativa durante o desenvolvimento é uma expectativa formal do programa e está documentada no [README](./README.md).
+Alterações menores no âmbito, motivadas por descobertas técnicas durante o desenvolvimento, são habituais e aceitáveis desde que sejam comunicadas à equipa do programa. Alterações substanciais que alterem a natureza do projecto requerem acordo explícito com a equipa antes de prosseguir.
 
 **O que acontece se eu não conseguir completar o projeto?**
 
-As situações de projetos não completados são avaliadas caso a caso pela equipe do programa. Quando o builder manteve comunicação durante o desenvolvimento e existem circunstâncias técnicas genuínas que impediram a finalização, a equipe pode considerar pagamentos parciais proporcionais ao avanço demonstrável ou reorientar o projeto para um escopo reduzido. Em situações de abandono sem comunicação, não procede o pagamento do bounty. A política do programa busca proteger tanto o builder diante de dificuldades genuínas quanto a equipe diante de entregas não completadas.
-
-**Posso apresentar um pitch sem ter lido todos os documentos do repositório?**
-
-É tecnicamente possível, mas não recomendado. A qualidade do pitch e a velocidade de aprovação dependem diretamente de o builder ter compreendido os critérios do programa, as direções de cada track e os requisitos do entregável. Os pitches de builders que evidenciam conhecimento da documentação recebem menor quantidade de pedidos de ajuste e avançam com maior rapidez no processo.
+As situações de projectos não concluídos são avaliadas caso a caso pela equipa do programa.
 
 ---
 
@@ -82,30 +72,52 @@ As situações de projetos não completados são avaliadas caso a caso pela equi
 
 **Quem é dono do repositório e do código?**
 
-O builder mantém plena propriedade do repositório e do código, publicado sob a licença open source escolhida. O programa não reivindica direitos exclusivos sobre o trabalho financiado e não exige transferência do repositório a uma organização da Golem.
+O builder mantém plena propriedade do repositório e do código, publicado sob a licença open source escolhida. O programa não reivindica direitos exclusivos sobre o trabalho financiado e não exige a transferência do repositório para uma organização da Golem.
+
+Ao submeter um projecto ao programa, o builder autoriza a Golem a mencionar, partilhar e dar destaque ao projecto nos seus canais para fins de marketing e promoção do ecossistema.
 
 **Posso usar o projeto para meu portfólio ou continuar desenvolvendo-o?**
 
 Sim. O builder está livre para usar o projeto para portfólio profissional, apresentações públicas, candidaturas a empregos, continuação do desenvolvimento, e inclusive evolução do projeto para produtos comerciais. O programa fomenta explicitamente que os projetos financiados continuem crescendo para além do bounty inicial.
 
-**Que difusão a Golem faz do projeto?**
+**Como é que a Golem divulga o projecto?**
 
-Uma vez validado o entregável, a equipe coordena a difusão do projeto pelos canais oficiais da Golem e pelas comunidades parceiras correspondentes. Isso inclui publicação no Discord oficial, menção em redes sociais do projeto quando aplicável, e inclusão do repositório como referência dentro do ecossistema. A difusão específica varia conforme o tipo de projeto e o momento do programa.
+Assim que o entregável é validado, a equipa partilha o projecto pelos canais oficiais da Golem: uma publicação no Discord, uma menção nas redes sociais quando se justificar, e a adição do repositório à lista de referências do ecossistema. O que fazemos concretamente depende do projecto.
 
 **Posso apresentar o projeto em eventos ou conferências?**
 
-Sim. O builder está livre para apresentar seu trabalho em qualquer evento, hackathon ou conferência, mencionando que foi construído no marco do Golem Community Builder Programme. Quando aplicável, a equipe do programa pode facilitar contatos ou informações adicionais para apoiar esse tipo de apresentações.
+Sim. O builder está livre para apresentar o seu trabalho em qualquer evento, hackathon ou conferência. Quando aplicável, a equipa do programa pode facilitar contactos ou informações adicionais para apoiar esse tipo de apresentações.
 
 ---
 
-## Canais de suporte e consultas
+## Suporte e canais
 
-Para perguntas não cobertas neste documento, os canais recomendados se diferenciam conforme a natureza da consulta.
+- **Perguntas sobre o programa** (tracks, candidaturas, âmbito, entrega, pagamentos): canal `builders` no Discord oficial da Golem.
+- **Questões técnicas sobre a Golem** (SDK, yagna, providers, infraestrutura): canal `❓question-answers` no mesmo Discord.
+- **Antes de perguntar, consulta a documentação**: [docs.golem.network](https://docs.golem.network) cobre a maioria das questões técnicas habituais.
 
-Para consultas específicas sobre o programa, a primeira opção é o canal de Discord dedicado ao builder programme dentro do servidor oficial da Golem, onde a equipe do programa atende dúvidas sobre tracks, pitches, escopo, entrega, pagamentos e qualquer aspecto operacional da iniciativa.
+Junta-te ao Discord em [discord.gg/golem](https://discord.gg/golem).
 
-Para consultas técnicas sobre o protocolo Golem em si, independentemente do programa, a opção adequada é o canal `❓question-answers` ou equivalente do servidor oficial da Golem, onde a comunidade técnica mais ampla e a equipe de protocolo respondem dúvidas sobre o SDK, yagna, providers, infraestrutura e outros aspectos técnicos gerais.
+---
 
-Para aprofundar em aspectos técnicos antes de levantar uma consulta, a documentação oficial da Golem em [docs.golem.network](https://docs.golem.network) constitui o recurso de referência principal e costuma responder à maioria das dúvidas técnicas habituais sem necessidade de canalizá-las por chat.
+## Perguntas adicionais
 
-O acesso ao servidor oficial do Discord é feito a partir de [discord.gg/golem](https://discord.gg/golem).
+**Preciso preparar um documento de pitch ou um template para me candidatar?**
+
+Não. As candidaturas são feitas através do formulário oficial em https://forms.golem.network/golem-builders-programme. O formulário recolhe o track, a ideia, a abordagem técnica e a experiência relevante. Não há nenhum documento de pitch separado para redigir ou enviar.
+
+**O que deve mostrar o vídeo demo de 2–3 minutos?**
+
+Uma gravação breve do projeto a funcionar na prática — suficiente para que alguém sem conhecimento prévio do trabalho compreenda o que faz e como usa a Golem. O vídeo é um entregável obrigatório e é utilizado para amplificação nos canais oficiais da Golem.
+
+**Quando o bounty é pago em $GLM, como é feita a conversão do valor em USD?**
+
+O bounty é denominado em 500 USD e pago em $GLM. O valor em $GLM é fixado pela cotação no dia do pagamento, de modo que o equivalente em USD nesse momento corresponde ao bounty acordado. Os builders fornecem um endereço de wallet e a rede em que desejam receber (Polygon ou Ethereum mainnet); o $GLM é transferido diretamente.
+
+**Posso usar ferramentas de IA ou assistentes de código enquanto construo?**
+
+Sim. O entregável é o projeto a funcionar, a documentação e o vídeo demo. A forma como o constróis é decisão tua — assistentes de código com IA, ferramentas de pair programming ou qualquer outro recurso. O que importa é que o código seja teu para publicar sob licença aberta, que o relatório técnico reflita a tua compreensão do trabalho e que o projeto realmente execute na Golem.
+
+**Posso fazer um fork de um projeto Golem existente para a minha candidatura?**
+
+Forks são aceites apenas como ponto de partida e somente com trabalho novo substancial acrescentado. Um fork puro com alterações menores não qualifica. Se tiveres dúvidas sobre se a tua proposta conta como trabalho substancial, menciona-o no formulário de candidatura — a equipe dirá de antemão.

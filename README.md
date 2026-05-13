@@ -6,7 +6,7 @@
 
 # Golem Community Builder Programme
 
-**Build on decentralized compute · Construir sobre compute descentralizado · Construa sobre compute descentralizado**
+**Build on decentralised compute · Construir sobre compute descentralizado · Construa sobre compute descentralizado**
 
 <br />
 

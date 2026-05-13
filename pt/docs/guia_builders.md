@@ -1,6 +1,8 @@
 # Builders Guide
 
-Referência técnica do **Builder Programme**: cinco tracks, stack recomendado e critérios de avaliação. Leitura prévia antes do pitch.
+Referência técnica do **Builder Programme**: cinco tracks, stack recomendado e critérios de avaliação. Leitura prévia antes de aplicar.
+
+> Quando você tiver sua ideia, candidate-se através do [formulário oficial de candidatura](https://forms.golem.network/golem-builders-programme).
 
 ---
 
@@ -28,7 +30,7 @@ Linguagem primária: **JavaScript / TypeScript sobre Node.js ≥ 20**. Existem S
 - **Testnet (`hoodi`)** — Recomendada por padrão. tGLM grátis via comando CLI `yagna payment fund`, mesma API que mainnet, funcionalmente equivalente para fins demonstrativos. Alternativas também suportadas: sepolia, rinkeby, amoy. [Quickstart com `payment fund`](https://docs.golem.network/docs/quickstarts/js-quickstart).
 - **Mainnet (Polygon)** — Apenas se o projeto exigir comportamento econômico real ou integração com produção. Roda sobre **Polygon** (`erc20-polygon-glm`), não Ethereum L1. Custos típicos: unidades a dezenas de $GLM por projeto. Documentar custos no entregável. [Switching to mainnet](https://docs.golem.network/docs/creators/javascript/examples/switching-to-mainnet) · [Modelo de pagamentos](https://docs.golem.network/docs/golem/payments).
 
-A escolha é declarada no pitch e mantida durante o desenvolvimento. Qualquer mudança é notificada à equipe.
+A escolha é declarada no formulário de candidatura e mantida durante o desenvolvimento. Qualquer mudança é notificada à equipe.
 
 ---
 
@@ -122,9 +124,20 @@ Para builders com uma ideia própria que use Golem de forma interessante e não 
 
 **Não admissíveis:** uso marginal ou decorativo de Golem, duplicação de trabalho prévio da equipe ou de builders passados, escopo inexecutável em 4 semanas com 500 USD.
 
-**Processo:** pitch com mais detalhe que em A-D. Incluir justificativa de por que não se encaixa nos tracks definidos, descrição explícita do componente paralelizável, e referências a trabalho prévio similar que o builder tenha considerado.
+**Processo:** as respostas do formulário de candidatura devem incluir mais detalhe do que nos tracks A-D: justificativa de por que a ideia não se encaixa nos tracks definidos, descrição explícita do componente paralelizável, e referências a trabalho prévio similar que o builder tenha considerado.
 
 **Critério de sucesso:** Demonstra de forma concreta uma capacidade da Golem que nenhum projeto prévio do programa tenha mostrado, e produz um entregável público que a comunidade possa estudar, replicar ou usar?
+
+---
+
+## Entregáveis
+
+A lista abaixo é orientativa. Os entregáveis concretos são acordados com a equipa da Golem quando o projecto é seleccionado.
+
+- **Repositório público no GitHub** — sob o utilizador ou org do builder, com um README de configuração claro que um terceiro possa clonar e executar.
+- **Licença de código aberto** — MIT recomendada; o ficheiro `LICENSE` deve estar presente na raiz do repositório.
+- **Documentação técnica** — no README do repositório: o que foi construído, como a paralelização funciona, decisões técnicas, resultados e métricas sobre Golem Network.
+- **Vídeo demo (2–3 minutos)** — uma gravação curta mostrando o projecto em funcionamento, usada para amplificação nos canais da Golem.
 
 ---
 
