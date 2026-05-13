@@ -10,7 +10,16 @@
 
 <br />
 
-[![Bounty](https://img.shields.io/badge/Bounty-500%20USD%20in%20%24GLM-0F1FE3?style=for-the-badge)](#processo-de-participação)
+### 💰 500 USD em $GLM · 2-4 semanas · Avaliação contínua
+
+<br />
+
+<a href="https://forms.golem.network/golem-builders-programme">
+  <img src="https://img.shields.io/badge/→%20Candidatar--se%20agora-0F1FE3?style=for-the-badge&labelColor=0F1FE3" height="44" alt="Candidatar-se agora" />
+</a>
+
+<br /><br />
+
 [![Status](https://img.shields.io/badge/Status-Open%20%26%20Ongoing-22C55E?style=for-the-badge)](#)
 [![License](https://img.shields.io/badge/License-Open%20Source-1E40AF?style=for-the-badge)](#)
 [![Discord](https://img.shields.io/badge/Discord-Golem%20Community-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/golem)
@@ -18,7 +27,6 @@
 <br />
 
 [**Builders Guide**](./docs/guia_builders.md) ·
-[**Candidatar-se**](https://forms.golem.network/golem-builders-programme) ·
 [**FAQ**](./FAQ.md)
 
 </div>
@@ -51,17 +59,67 @@ O programa propõe cinco tracks orientados a diferentes tipos de demonstrações
 
 Quem tiver uma ideia própria pode propô-la pelo Track E, sujeita a aprovação prévia pela equipe.
 
-<div align="center">
+<table>
+<tr>
+<td width="33%" valign="top">
 
-| Track | Foco principal |
-|:-----:|:---------------|
-| **A** · [Parallel Media Processing](./docs/guia_builders.md#track-a) | Processamento paralelo de arquivos de áudio e vídeo em múltiplos providers |
-| **B** · [Compute-Intensive Simulation](./docs/guia_builders.md#track-b) | Simulações numéricas, Monte Carlo e computação científica em escala |
-| **C** · [Provider Reputation & Benchmarking](./docs/guia_builders.md#track-c) | Ferramentas de medição, scoring e benchmarking de providers |
-| **D** · [Chess Engine / Game AI at Scale](./docs/guia_builders.md#track-d) | IA de jogos como demonstração acessível de paralelismo |
-| **E** · [Open Track](./docs/guia_builders.md#track-e) | Proposta livre do builder, validada antes do início |
+### 🎬 Track A
+**Parallel Media Processing**
 
-</div>
+Processamento paralelo de arquivos de áudio e vídeo em múltiplos providers.
+
+[Detalhes →](./docs/guia_builders.md#track-a)
+
+</td>
+<td width="33%" valign="top">
+
+### 🔬 Track B
+**Compute-Intensive Simulation**
+
+Simulações numéricas, Monte Carlo e computação científica em escala.
+
+[Detalhes →](./docs/guia_builders.md#track-b)
+
+</td>
+<td width="33%" valign="top">
+
+### 📊 Track C
+**Provider Reputation & Benchmarking**
+
+Ferramentas de medição, scoring e benchmarking de providers.
+
+[Detalhes →](./docs/guia_builders.md#track-c)
+
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top">
+
+### ♟️ Track D
+**Chess Engine / Game AI**
+
+IA de jogos como demonstração acessível de paralelismo.
+
+[Detalhes →](./docs/guia_builders.md#track-d)
+
+</td>
+<td width="33%" valign="top">
+
+### 🚀 Track E
+**Open Track**
+
+Proposta livre do builder, validada antes do início.
+
+[Detalhes →](./docs/guia_builders.md#track-e)
+
+</td>
+<td width="33%" valign="top">
+
+&nbsp;
+
+</td>
+</tr>
+</table>
 
 A descrição completa de cada track, incluindo direções técnicas sugeridas, encontra-se no [**Builders Guide**](./docs/guia_builders.md).
 
@@ -69,11 +127,17 @@ A descrição completa de cada track, incluindo direções técnicas sugeridas, 
 
 ## Processo de participação
 
-```
-  ┌──────────────┐    ┌─────────────┐    ┌──────────────┐    ┌─────────────┐    ┌──────────────┐
-  │  1. Ler e    │ →  │  2. Aplicar │ →  │  3. Revisão  │ →  │ 4. Construir│ →  │  5. Entregar │
-  │  ter ideia   │    │  via form   │    │  & Acordo    │    │             │    │  e receber   │
-  └──────────────┘    └─────────────┘    └──────────────┘    └─────────────┘    └──────────────┘
+```mermaid
+flowchart LR
+    A([1 · Ler e<br/>ter ideia]) --> B([2 · Candidatar-se<br/>via form])
+    B --> C([3 · Revisão<br/>e Acordo])
+    C --> D([4 · Construir])
+    D --> E([5 · Entregar<br/>e receber])
+    style A fill:#0F1FE3,stroke:#0F1FE3,color:#fff
+    style B fill:#0F1FE3,stroke:#0F1FE3,color:#fff
+    style C fill:#0F1FE3,stroke:#0F1FE3,color:#fff
+    style D fill:#0F1FE3,stroke:#0F1FE3,color:#fff
+    style E fill:#22C55E,stroke:#22C55E,color:#fff
 ```
 
 ### 1. Leia este README e o Builders Guide
@@ -181,6 +245,10 @@ Para dúvidas sobre o programa antes de submeter uma candidatura, o canal recome
 <img src="../assets/golem-logo.png" alt="Golem" width="60" />
 
 **Desenvolvido com $GLM · Construído para Ethereum · Aberto a todos**
+
+<br />
+
+[**→ Candidatar-se ao programa**](https://forms.golem.network/golem-builders-programme)
 
 <sub>© Golem Network · Community Builder Programme</sub>
 

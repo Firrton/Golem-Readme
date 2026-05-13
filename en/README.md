@@ -10,7 +10,16 @@
 
 <br />
 
-[![Bounty](https://img.shields.io/badge/Bounty-500%20USD%20in%20%24GLM-0F1FE3?style=for-the-badge)](#participation-process)
+### 💰 500 USD in $GLM · 2-4 weeks · Rolling review
+
+<br />
+
+<a href="https://forms.golem.network/golem-builders-programme">
+  <img src="https://img.shields.io/badge/→%20Apply%20now-0F1FE3?style=for-the-badge&labelColor=0F1FE3" height="44" alt="Apply now" />
+</a>
+
+<br /><br />
+
 [![Status](https://img.shields.io/badge/Status-Open%20%26%20Ongoing-22C55E?style=for-the-badge)](#)
 [![License](https://img.shields.io/badge/License-Open%20Source-1E40AF?style=for-the-badge)](#)
 [![Discord](https://img.shields.io/badge/Discord-Golem%20Community-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/golem)
@@ -18,7 +27,6 @@
 <br />
 
 [**Builders Guide**](./docs/builders_guide.md) ·
-[**Apply**](https://forms.golem.network/golem-builders-programme) ·
 [**FAQ**](./FAQ.md)
 
 </div>
@@ -51,17 +59,67 @@ The programme proposes five tracks oriented to different kinds of technical demo
 
 Anyone with their own idea can propose it through Track E, subject to prior approval by the team.
 
-<div align="center">
+<table>
+<tr>
+<td width="33%" valign="top">
 
-| Track | Main focus |
-|:-----:|:-----------|
-| **A** · [Parallel Media Processing](./docs/builders_guide.md#track-a) | Parallel processing of audio and video files across multiple providers |
-| **B** · [Compute-Intensive Simulation](./docs/builders_guide.md#track-b) | Numerical simulations, Monte Carlo and scientific computation at scale |
-| **C** · [Provider Reputation & Benchmarking](./docs/builders_guide.md#track-c) | Measurement, scoring and benchmarking tools for providers |
-| **D** · [Chess Engine / Game AI at Scale](./docs/builders_guide.md#track-d) | Game AI as a legible demonstration of parallelism |
-| **E** · [Open Track](./docs/builders_guide.md#track-e) | Builder's own proposal, validated before kickoff |
+### 🎬 Track A
+**Parallel Media Processing**
 
-</div>
+Parallel processing of audio and video files across multiple providers.
+
+[Details →](./docs/builders_guide.md#track-a)
+
+</td>
+<td width="33%" valign="top">
+
+### 🔬 Track B
+**Compute-Intensive Simulation**
+
+Numerical simulations, Monte Carlo and scientific computation at scale.
+
+[Details →](./docs/builders_guide.md#track-b)
+
+</td>
+<td width="33%" valign="top">
+
+### 📊 Track C
+**Provider Reputation & Benchmarking**
+
+Measurement, scoring and benchmarking tools for providers.
+
+[Details →](./docs/builders_guide.md#track-c)
+
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top">
+
+### ♟️ Track D
+**Chess Engine / Game AI at Scale**
+
+Game AI as a legible demonstration of parallelism.
+
+[Details →](./docs/builders_guide.md#track-d)
+
+</td>
+<td width="33%" valign="top">
+
+### 🚀 Track E
+**Open Track**
+
+Your own proposal, validated before kickoff.
+
+[Details →](./docs/builders_guide.md#track-e)
+
+</td>
+<td width="33%" valign="top">
+
+&nbsp;
+
+</td>
+</tr>
+</table>
 
 The full description of each track, including suggested technical directions, can be found in the [**Builders Guide**](./docs/builders_guide.md).
 
@@ -69,11 +127,17 @@ The full description of each track, including suggested technical directions, ca
 
 ## Participation process
 
-```
-  ┌──────────────┐    ┌─────────────┐    ┌──────────────┐    ┌─────────────┐    ┌──────────────┐
-  │  1. Read &   │ →  │  2. Apply   │ →  │  3. Review   │ →  │  4. Build   │ →  │  5. Deliver  │
-  │  Get an idea │    │  via form   │    │  & Agree     │    │             │    │  & Get Paid  │
-  └──────────────┘    └─────────────┘    └──────────────┘    └─────────────┘    └──────────────┘
+```mermaid
+flowchart LR
+    A([1 · Read &<br/>Get an idea]) --> B([2 · Apply<br/>via form])
+    B --> C([3 · Review<br/>& Agree])
+    C --> D([4 · Build])
+    D --> E([5 · Deliver<br/>& Get Paid])
+    style A fill:#0F1FE3,stroke:#0F1FE3,color:#fff
+    style B fill:#0F1FE3,stroke:#0F1FE3,color:#fff
+    style C fill:#0F1FE3,stroke:#0F1FE3,color:#fff
+    style D fill:#0F1FE3,stroke:#0F1FE3,color:#fff
+    style E fill:#22C55E,stroke:#22C55E,color:#fff
 ```
 
 ### 1. Read this README and the Builders Guide
@@ -181,6 +245,10 @@ For questions about the programme before submitting a pitch, the recommended cha
 <img src="../assets/golem-logo.png" alt="Golem" width="60" />
 
 **Powered by $GLM · Built for Ethereum · Open to everyone**
+
+<br />
+
+[**→ Apply to the programme**](https://forms.golem.network/golem-builders-programme)
 
 <sub>© Golem Network · Community Builder Programme</sub>
 
