@@ -132,14 +132,12 @@ For builders with their own idea that uses Golem in an interesting way and doesn
 
 ## Deliverables
 
-All projects must submit the following before payment is released:
+The list below is orientative. Specific deliverables are agreed with the Golem team once a project is picked up.
 
 - **Public GitHub repository** — under the builder's user or org, with a clear setup README a third party can clone and run.
 - **Open-source licence** — MIT recommended; the `LICENSE` file must be present at the repo root.
 - **Technical write-up** — in the repo README: what was built, how the parallelisation works, technical decisions, results and metrics on Golem.
 - **Demo video (2–3 minutes)** — a short recording showing the project running, used for amplification on Golem channels.
-
-Payment in $GLM is released once all deliverables are validated by the Golem team.
 
 ---
 

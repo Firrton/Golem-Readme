@@ -1,32 +1,26 @@
 # Frequently Asked Questions
 
-Reference document gathering the most common questions about the **Golem Community Builder Programme**. It is intended as a complement to the rest of the repository documentation and as a starting point before channelling specific queries to the programme team or the Golem technical community.
-
-The answers included here reflect the policy of the programme in force at the time of the document's last update. For specific situations not covered in the FAQ, official communication channels are detailed at the end of the document.
-
----
-
 ## About the programme
 
 **What exactly is the Golem Community Builder Programme?**
 
-The programme is an open and ongoing initiative that funds technical projects built on top of Golem Network. Each approved project receives a bounty of 500 USD paid in $GLM, with an estimated duration of two to four weeks of development. Unlike a traditional hackathon, the programme does not run under deadline pressure or via pitch competitions; instead, it funds genuine technical work on the protocol. The full description of the programme can be found in the [README](./README.md).
+The programme is an open and ongoing initiative that funds technical projects built on top of Golem Network. Each approved project receives a bounty of 500 USD paid in $GLM, with an estimated duration of two to four weeks of development. The full description of the programme can be found in the [README](./README.md).
 
 **How is this programme different from a hackathon?**
 
-The programme is open-ended with no deadlines or competitive judging. The Golem team funds clearly-scoped projects that demonstrate the protocol, and every approved project receives the bounty — there are no runners-up.
+The programme is open-ended: no deadlines, no pitch competition, no runners-up. Builders submit their own ideas through the application form. The Golem team reviews submissions on a rolling basis and picks the strongest ones. For selected projects, the builder and the team agree the scope together — and only then does development start.
 
 **Who can participate?**
 
-Any developer with the technical capacity to ship a real project: Web2 or Web3 background, with or without prior Golem experience. No credentials or affiliations required.
+Any developer with the technical capacity to ship a real project: Web2 or Web3 background, with or without prior Golem experience.
 
 **Can teams be formed for participation?**
 
-Yes. The programme accepts both individual builders and teams without an explicit size limit.
+Yes. The programme accepts both individual builders and teams without a size limit.
 
 **Can I participate in multiple projects over time?**
 
-One project per team at a time. After delivery is validated and the bounty paid, the same team may apply again with a new idea. We do this so the team's attention stays on one well-scoped project, not several in parallel.
+One project per team at a time. After delivery is validated and the bounty paid, the same team may apply again with a new idea. 
 
 ---
 
@@ -42,7 +36,7 @@ The main recommended path is `@golem-sdk/task-executor`, a JavaScript and TypeSc
 
 **Can I work on testnet or do I have to use mainnet?**
 
-Both networks are valid for delivery of the programme. The testnet, which currently runs on the hoodi network, is the recommended environment for most projects, as it allows real work to be executed on the network at no real cost. Mainnet is appropriate when the project requires demonstrating real economic behaviour or integrations with production systems. The choice must be made explicit in the application form.
+We expect builders to iterate on testnet (currently `hoodi`). There is no mainnet expectation by default. If mainnet is genuinely needed for a project, that's agreed between the selected team and the Golem team at scoping time.
 
 **Is there support for languages other than JavaScript and TypeScript?**
 
@@ -56,21 +50,21 @@ Golem offers access to GPU providers, although availability may be variable depe
 
 ## On the programme process
 
-**How long does the team take to review an application?**
+**How long does it take to hear back after applying?**
 
-We aim to respond within 7 business days. If we expect to take longer in a particular case (for example during programme launches with high volume), we'll let you know when you receive the acknowledgement email.
+The Golem team reviews applications on a rolling basis, so there is no fixed response window. You'll be notified as soon as a decision is made. If your idea fits the programme, the team reaches out to discuss scope and milestones before any development starts.
 
 **What happens if my application is rejected?**
 
-Decisions on rejected applications are at the discretion of the programme team. In some cases, rejection may be accompanied by specific comments that allow the builder to adjust the proposal and resubmit it. In other cases, the builder may be advised to explore an alternative direction or to wait before submitting a new proposal. The specific decision is communicated directly to the builder at the time of rejection.
+Decisions on rejected applications are at the discretion of the programme team. We aim to share feedback when we can, but given application volume we cannot guarantee it.
 
 **Can I modify the project's scope during development?**
 
-Minor changes in scope, motivated by technical findings during development, are common and acceptable provided they are communicated to the programme team. Substantial changes that alter the nature of the project require explicit agreement with the team before proceeding. Proactive communication during development is a formal expectation of the programme and is documented in the [README](./README.md).
+Minor changes in scope, motivated by technical findings during development, are common and acceptable provided they are communicated to the programme team. Substantial changes that alter the nature of the project require explicit agreement with the team before proceeding.
 
 **What happens if I cannot complete the project?**
 
-Situations of uncompleted projects are evaluated case by case by the programme team. When the builder has maintained communication during development and there are genuine technical circumstances that prevented completion, the team may consider partial payments proportional to demonstrable progress or reorient the project towards a reduced scope. In situations of abandonment without communication, payment of the bounty does not proceed. The programme's policy seeks to protect both the builder in the face of genuine difficulties and the team in the face of uncompleted deliveries.
+Situations of uncompleted projects are evaluated case by case by the programme team.
 
 ---
 
@@ -80,31 +74,31 @@ Situations of uncompleted projects are evaluated case by case by the programme t
 
 The builder retains full ownership of the repository and the code, published under the chosen open source licence. The programme does not claim exclusive rights over the funded work and does not require transfer of the repository to a Golem organisation.
 
+By submitting a project to the programme, you authorise Golem to mention, share, and feature the project across its channels for marketing and ecosystem-promotion purposes.
+
 **Can I use the project for my portfolio or continue developing it?**
 
 Yes. The builder is free to use the project for professional portfolio, public presentations, job applications, continued development, and even evolution of the project into commercial products. The programme explicitly encourages funded projects to continue growing beyond the initial bounty.
 
-**What dissemination does Golem do of the project?**
+**How does Golem promote the project?**
 
-Once the deliverable is validated, the team coordinates the dissemination of the project through the official Golem channels. This includes publication on the official Discord, mention on the project's social networks when applicable, and inclusion of the repository as a reference within the ecosystem. Specific dissemination varies according to the type of project and the moment of the programme.
+Once your deliverable is validated, the team shares the project across Golem's official channels: a post on Discord, a mention on Golem's social media when it fits, and adding the repository to our list of ecosystem references. What we do exactly depends on the project.
 
 **Can I present the project at events or conferences?**
 
-Yes. The builder is free to present their work at any event, hackathon or conference, mentioning that it was built within the framework of the Golem Community Builder Programme. When applicable, the programme team can facilitate contacts or additional information to support such presentations.
+Yes. The builder is free to present their work at any event, hackathon or conference. When applicable, the programme team can facilitate contacts or additional information to support such presentations.
 
 ---
 
-## Support and consultation channels
+## Support and channels
 
-For questions not covered in this document, the recommended channels differ according to the nature of the query.
+For anything not covered here, use the channel that fits the question:
 
-For specific queries about the programme, the first option is the builders channel on the official Golem Discord (discord.gg/golem), where the programme team handles questions about tracks, applications, scope, delivery, payments and any operational aspect of the initiative.
+- **Programme questions** (tracks, applications, scope, delivery, payments): the `builders` channel on the official Golem Discord.
+- **Technical questions about Golem itself** (SDK, yagna, providers, infrastructure): the `❓question-answers` channel on the same Discord.
+- **Before asking, check the docs**: [docs.golem.network](https://docs.golem.network) covers most technical questions.
 
-For technical queries about the Golem protocol itself, independent of the programme, the appropriate option is the `❓question-answers` channel or equivalent on the official Golem server, where the wider technical community and the protocol team answer questions about the SDK, yagna, providers, infrastructure and other general technical aspects.
-
-To go deeper into technical aspects before raising a query, the official Golem documentation at [docs.golem.network](https://docs.golem.network) constitutes the main reference resource and usually answers most common technical doubts without the need to channel them through chat.
-
-Access to the official Discord server is via [discord.gg/golem](https://discord.gg/golem).
+Join the Discord at [discord.gg/golem](https://discord.gg/golem).
 
 ---
 
@@ -113,10 +107,6 @@ Access to the official Discord server is via [discord.gg/golem](https://discord.
 **Do I need to prepare a pitch document or template to apply?**
 
 No. Applications are made through the official form at https://forms.golem.network/golem-builders-programme. The form captures the track, idea, technical approach and relevant experience. There is no separate pitch document to write or upload.
-
-**How long does it take to hear back after applying?**
-
-The Golem team reviews applications on a rolling basis. There is no fixed response window, but you will be notified as soon as a decision is made. If your idea fits the programme, the team reaches out to discuss specifics and milestones before any development starts.
 
 **What should the 2–3 minute demo video show?**
 

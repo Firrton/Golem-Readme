@@ -132,14 +132,12 @@ Para builders com uma ideia própria que use Golem de forma interessante e não 
 
 ## Entregáveis
 
-Todos os projetos devem apresentar o seguinte antes de o pagamento ser liberado:
+A lista abaixo é orientativa. Os entregáveis concretos são acordados com a equipa da Golem quando o projecto é seleccionado.
 
-- **Repositório público no GitHub** — sob o usuário ou org do builder, com um README de configuração claro que um terceiro possa clonar e executar.
-- **Licença de código aberto** — MIT recomendada; o arquivo `LICENSE` deve estar presente na raiz do repositório.
+- **Repositório público no GitHub** — sob o utilizador ou org do builder, com um README de configuração claro que um terceiro possa clonar e executar.
+- **Licença de código aberto** — MIT recomendada; o ficheiro `LICENSE` deve estar presente na raiz do repositório.
 - **Documentação técnica** — no README do repositório: o que foi construído, como a paralelização funciona, decisões técnicas, resultados e métricas sobre Golem Network.
-- **Vídeo demo (2–3 minutos)** — uma gravação curta mostrando o projeto em funcionamento, usada para amplificação nos canais da Golem.
-
-O pagamento em $GLM é liberado após a validação de todos os entregáveis pelo time da Golem.
+- **Vídeo demo (2–3 minutos)** — uma gravação curta mostrando o projecto em funcionamento, usada para amplificação nos canais da Golem.
 
 ---
 
