@@ -17,7 +17,7 @@
 
 <br />
 
-[**Builders Guide**](./docs/builders_guide.md) ·
+[**Builders Guide**](./docs/guia_builders.md) ·
 [**Candidatar-se**](https://forms.golem.network/golem-builders-programme) ·
 [**FAQ**](./FAQ.md)
 
@@ -55,15 +55,15 @@ Quem tiver uma ideia própria pode propô-la pelo Track E, sujeita a aprovação
 
 | Track | Foco principal |
 |:-----:|:---------------|
-| **A** · [Parallel Media Processing](./docs/builders_guide.md#track-a) | Processamento paralelo de arquivos de áudio e vídeo em múltiplos providers |
-| **B** · [Compute-Intensive Simulation](./docs/builders_guide.md#track-b) | Simulações numéricas, Monte Carlo e computação científica em escala |
-| **C** · [Provider Reputation & Benchmarking](./docs/builders_guide.md#track-c) | Ferramentas de medição, scoring e benchmarking de providers |
-| **D** · [Chess Engine / Game AI at Scale](./docs/builders_guide.md#track-d) | IA de jogos como demonstração acessível de paralelismo |
-| **E** · [Open Track](./docs/builders_guide.md#track-e) | Proposta livre do builder, validada antes do início |
+| **A** · [Parallel Media Processing](./docs/guia_builders.md#track-a) | Processamento paralelo de arquivos de áudio e vídeo em múltiplos providers |
+| **B** · [Compute-Intensive Simulation](./docs/guia_builders.md#track-b) | Simulações numéricas, Monte Carlo e computação científica em escala |
+| **C** · [Provider Reputation & Benchmarking](./docs/guia_builders.md#track-c) | Ferramentas de medição, scoring e benchmarking de providers |
+| **D** · [Chess Engine / Game AI at Scale](./docs/guia_builders.md#track-d) | IA de jogos como demonstração acessível de paralelismo |
+| **E** · [Open Track](./docs/guia_builders.md#track-e) | Proposta livre do builder, validada antes do início |
 
 </div>
 
-A descrição completa de cada track, incluindo direções técnicas sugeridas, encontra-se no [**Builders Guide**](./docs/builders_guide.md).
+A descrição completa de cada track, incluindo direções técnicas sugeridas, encontra-se no [**Builders Guide**](./docs/guia_builders.md).
 
 ---
 
@@ -71,14 +71,14 @@ A descrição completa de cada track, incluindo direções técnicas sugeridas, 
 
 ```
   ┌──────────────┐    ┌─────────────┐    ┌──────────────┐    ┌─────────────┐    ┌──────────────┐
-  │  1. Read &   │ →  │  2. Apply   │ →  │  3. Review   │ →  │  4. Build   │ →  │  5. Deliver  │
-  │  Get an idea │    │  via form   │    │  & Agree     │    │             │    │  & Get Paid  │
+  │  1. Ler e    │ →  │  2. Aplicar │ →  │  3. Revisão  │ →  │ 4. Construir│ →  │  5. Entregar │
+  │  ter ideia   │    │  via form   │    │  & Acordo    │    │             │    │  e receber   │
   └──────────────┘    └─────────────┘    └──────────────┘    └─────────────┘    └──────────────┘
 ```
 
 ### 1. Leia este README e o Builders Guide
 
-Leia este documento e o [Builders Guide](./docs/builders_guide.md), depois escolha uma ideia. O Guide descreve os cinco tracks em detalhe e inclui direções técnicas sugeridas para ajudar a definir o escopo do projeto.
+Leia este documento e o [Builders Guide](./docs/guia_builders.md), depois escolha uma ideia. O Guide descreve os cinco tracks em detalhe e inclui direções técnicas sugeridas para ajudar a definir o escopo do projeto.
 
 ### 2. Candidate-se pelo formulário
 
@@ -94,7 +94,7 @@ Uma vez aprovado, você começa a construir no seu próprio repositório públic
 
 ### 5. Entregue e receba
 
-Submeta todos os entregáveis acordados. Após a validação pela equipe da Golem, o bounty é transferido diretamente para a sua wallet em **$GLM**.
+Submeta todos os entregáveis acordados. Após a validação pela equipe da Golem, o bounty é transferido diretamente para a sua wallet em **$GLM**. O bounty é pago em $GLM dentro de 7 dias úteis após a validação do entregável.
 
 ---
 
@@ -131,7 +131,7 @@ O programa funciona como uma colaboração estruturada com compromissos claros d
 
 | Documento                                                                     | Propósito                                                        |
 | ----------------------------------------------------------------------------- | ---------------------------------------------------------------- |
-| [📘 Builders Guide](./docs/builders_guide.md)                                 | Descrição completa dos cinco tracks, exemplos e entregáveis      |
+| [📘 Builders Guide](./docs/guia_builders.md)                                 | Descrição completa dos cinco tracks, exemplos e entregáveis      |
 | [📨 Candidatar-se](https://forms.golem.network/golem-builders-programme)      | Submeta sua ideia pelo formulário de candidatura                 |
 | [❓ FAQ](./FAQ.md)                                                             | Perguntas frequentes sobre o programa                            |
 

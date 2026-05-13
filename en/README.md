@@ -94,7 +94,7 @@ Once approved, you start building on your own public GitHub repository. The Gole
 
 ### 5. Deliver and get paid
 
-Submit all agreed deliverables. Once the Golem team validates them, the bounty is transferred directly to your wallet in **$GLM**.
+Submit all agreed deliverables. Once the Golem team validates them, the bounty is transferred directly to your wallet in **$GLM**. The bounty is paid in $GLM within 7 business days of deliverable validation.
 
 ---
 
@@ -117,7 +117,7 @@ The programme works as a structured collaboration with clear commitments on both
 <td valign="top">
 
 - Genuine commitment to delivering the project within the agreed scope
-- Code published on GitHub under an open license with clear documentation
+- Code published on GitHub under an open licence with clear documentation
 - A final write-up that allows other developers to understand and reproduce the work
 - A short demo video (2–3 minutes) showing the project in action, for amplification on Golem channels
 

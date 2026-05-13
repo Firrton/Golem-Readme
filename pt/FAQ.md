@@ -14,11 +14,11 @@ O programa é uma iniciativa aberta e contínua que financia projetos técnicos 
 
 **Em que se diferencia este programa de um hackathon?**
 
-A diferença principal é estrutural. Um hackathon tem data de início e fim, exige aos participantes completar o trabalho dentro de um prazo comprimido e costuma entregar prêmios apenas aos projetos vencedores após uma competição. Este programa não tem deadline fixo, opera de forma contínua, e paga o bounty completo a todo projeto aprovado que cumpra os entregáveis acordados. A filosofia é financiar trabalho técnico de qualidade em vez de produzir competição entre builders.
+O programa é contínuo, sem prazos nem julgamento competitivo. A equipe da Golem financia projetos com escopo claramente definido que demonstrem o protocolo, e todo projeto aprovado recebe o bounty — não há finalistas.
 
 **Quem pode participar?**
 
-O programa está aberto a desenvolvedores Web3 com ou sem experiência prévia em Golem, assim como a desenvolvedores Web2 que estejam explorando compute descentralizado pela primeira vez. Não são exigidas credenciais formais nem afiliação a uma organização específica. É exigida capacidade técnica para construir o projeto proposto e disposição para publicar o resultado sob licença aberta.
+Qualquer desenvolvedor com capacidade técnica para entregar um projeto real: perfil Web2 ou Web3, com ou sem experiência prévia em Golem. Não são exigidas credenciais nem afiliações.
 
 **É possível formar equipes para participar?**
 
@@ -26,7 +26,7 @@ Sim. O programa aceita tanto builders individuais quanto equipes sem limite expl
 
 **Posso participar em múltiplos projetos ao longo do tempo?**
 
-A participação em múltiplos projetos é avaliada caso a caso pela equipe do programa. Builders que tenham completado satisfatoriamente um projeto prévio podem ser convidados ou autorizados a apresentar novas propostas, dependendo da qualidade do trabalho prévio, do intervalo transcorrido e da disponibilidade de vagas no programa. A política busca equilibrar o reconhecimento ao trabalho recorrente de builders comprometidos com a abertura do programa a novos participantes.
+Um projeto por equipe de cada vez. Após a validação da entrega e o pagamento do bounty, a mesma equipe pode candidatar-se novamente com uma nova ideia. Fazemos isso para que a atenção da equipe permaneça num projeto bem definido, não em vários em paralelo.
 
 ---
 
@@ -34,7 +34,7 @@ A participação em múltiplos projetos é avaliada caso a caso pela equipe do p
 
 **Preciso ter experiência prévia com Golem para participar?**
 
-Não. O programa está explicitamente desenhado para acolher tanto builders com experiência prévia quanto desenvolvedores que estão se encontrando com Golem pela primeira vez. Para builders novos, o [Builders Guide](./docs/guia_builders.md) oferece direções de projeto com complexidade estimada para facilitar a escolha inicial.
+Não é necessária experiência prévia com Golem. A equipe está disponível no Discord para orientar sobre o protocolo durante o desenvolvimento.
 
 **Que SDK devo usar para construir meu projeto?**
 
@@ -58,7 +58,7 @@ A Golem oferece acesso a providers com GPU, embora a disponibilidade possa ser v
 
 **Quanto tempo a equipe leva para revisar uma candidatura?**
 
-A equipe da Golem revisa as candidaturas de forma contínua à medida que chegam. Não há um prazo fixo de resposta, mas o builder é notificado assim que a decisão é tomada. Se a ideia se enquadra no programa, a equipe entra em contacto para definir os detalhes e os marcos antes de o desenvolvimento começar.
+O nosso objetivo é responder dentro de 7 dias úteis. Se, num caso particular, esperarmos demorar mais (por exemplo, durante lançamentos do programa com alto volume de candidaturas), informaremos o builder no e-mail de confirmação de receção.
 
 **O que acontece se minha candidatura for rejeitada?**
 
@@ -116,8 +116,20 @@ Não. As candidaturas são feitas através do formulário oficial em https://for
 
 **Quanto tempo demora a receber resposta após a candidatura?**
 
-A equipe da Golem revisa as candidaturas de forma contínua. Não há um prazo fixo de resposta, mas o builder será notificado assim que a decisão for tomada. Se a ideia se enquadra no programa, a equipe entra em contacto para discutir os detalhes e os marcos antes de o desenvolvimento começar.
+O nosso objetivo é responder dentro de 7 dias úteis. Se a ideia se enquadra no programa, a equipe entra em contacto para discutir os detalhes e os marcos antes de o desenvolvimento começar.
 
 **O que deve mostrar o vídeo demo de 2–3 minutos?**
 
 Uma gravação breve do projeto a funcionar na prática — suficiente para que alguém sem conhecimento prévio do trabalho compreenda o que faz e como usa a Golem. O vídeo é um entregável obrigatório e é utilizado para amplificação nos canais oficiais da Golem.
+
+**Quando o bounty é pago em $GLM, como é feita a conversão do valor em USD?**
+
+O bounty é denominado em 500 USD e pago em $GLM. O valor em $GLM é fixado pela cotação no dia do pagamento, de modo que o equivalente em USD nesse momento corresponde ao bounty acordado. Os builders fornecem um endereço de wallet e a rede em que desejam receber (Polygon ou Ethereum mainnet); o $GLM é transferido diretamente.
+
+**Posso usar ferramentas de IA ou assistentes de código enquanto construo?**
+
+Sim. O entregável é o projeto a funcionar, a documentação e o vídeo demo. A forma como o constróis é decisão tua — assistentes de código com IA, ferramentas de pair programming ou qualquer outro recurso. O que importa é que o código seja teu para publicar sob licença aberta, que o relatório técnico reflita a tua compreensão do trabalho e que o projeto realmente execute na Golem.
+
+**Posso fazer um fork de um projeto Golem existente para a minha candidatura?**
+
+Forks são aceites apenas como ponto de partida e somente com trabalho novo substancial acrescentado. Um fork puro com alterações menores não qualifica. Se tiveres dúvidas sobre se a tua proposta conta como trabalho substancial, menciona-o no formulário de candidatura — a equipe dirá de antemão.

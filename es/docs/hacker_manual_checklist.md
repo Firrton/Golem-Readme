@@ -15,7 +15,7 @@ Las referencias entre paréntesis apuntan al archivo donde está cubierto cada i
 
 ## 1. Fundamentos del programa
 
-- [✅] Misión y propósito explícitos (README.md → "Introducción", "Por qué existe")
+- [✅] Misión y propósito explícitos (README.md → "Introducción")
 - [✅] Diferencia con hackathon clásico explicada (README.md → "Introducción")
 - [✅] Audiencia objetivo definida en 3 perfiles (README.md → "A quién está dirigido")
 - [✅] Identidad visual mínima (logo, banner, badges en README.md)

@@ -12,29 +12,29 @@ The answers included here reflect the policy of the programme in force at the ti
 
 The programme is an open and ongoing initiative that funds technical projects built on top of Golem Network. Each approved project receives a bounty of 500 USD paid in $GLM, with an estimated duration of two to four weeks of development. Unlike a traditional hackathon, the programme does not run under deadline pressure or via pitch competitions; instead, it funds genuine technical work on the protocol. The full description of the programme can be found in the [README](./README.md).
 
-**How is this programme different from a hackathon?** %%simplify%%
+**How is this programme different from a hackathon?**
 
-The main difference is structural. A hackathon has start and end dates, requires participants to complete the work within a compressed timeframe, and usually awards prizes only to winning projects after a competition. This programme has no fixed deadline, runs continuously, and pays the full bounty to every approved project that meets the agreed deliverables. The philosophy is to fund quality technical work rather than to produce competition between builders.
+The programme is open-ended with no deadlines or competitive judging. The Golem team funds clearly-scoped projects that demonstrate the protocol, and every approved project receives the bounty — there are no runners-up.
 
-**Who can participate?** %%simpliofy%%
+**Who can participate?**
 
-The programme is open to Web3 developers with or without prior Golem experience, as well as Web2 developers exploring decentralized compute for the first time. No formal credentials or affiliation with a specific organization are required. Technical capacity to build the proposed project and willingness to publish the result under an open license are required.
+Any developer with the technical capacity to ship a real project: Web2 or Web3 background, with or without prior Golem experience. No credentials or affiliations required.
 
 **Can teams be formed for participation?**
 
 Yes. The programme accepts both individual builders and teams without an explicit size limit.
 
-**Can I participate in multiple projects over time?** %%no, simplify and no, only one project per team.%%
+**Can I participate in multiple projects over time?**
 
-Participation in multiple projects is evaluated case by case by the programme team. Builders who have satisfactorily completed a previous project may be invited or authorized to submit new proposals, depending on the quality of the previous work, the time elapsed and the availability of slots in the programme. The policy seeks to balance recognition of the recurring work of committed builders with openness to new participants.
+One project per team at a time. After delivery is validated and the bounty paid, the same team may apply again with a new idea. We do this so the team's attention stays on one well-scoped project, not several in parallel.
 
 ---
 
 ## On technical aspects
 
-**Do I need prior experience with Golem to participate?** %%simpliofy%%
+**Do I need prior experience with Golem to participate?**
 
-No. The programme is explicitly designed to welcome both builders with prior experience and developers who are encountering Golem for the first time. For new builders, the [Builders Guide](./docs/builders_guide.md) offers project directions with estimated complexity to facilitate the initial choice.
+No prior Golem experience required. The team is available on Discord to onboard you to the protocol during development.
 
 **Which SDK should I use to build my project?**
 
@@ -58,7 +58,7 @@ Golem offers access to GPU providers, although availability may be variable depe
 
 **How long does the team take to review an application?**
 
-The concrete response time depends on the volume of applications received at any given time. The programme team aims to respond with the greatest reasonable agility and notifies the builder as soon as the decision has been made.
+We aim to respond within 7 business days. If we expect to take longer in a particular case (for example during programme launches with high volume), we'll let you know when you receive the acknowledgement email.
 
 **What happens if my application is rejected?**
 
@@ -78,7 +78,7 @@ Situations of uncompleted projects are evaluated case by case by the programme t
 
 **Who owns the repository and the code?**
 
-The builder retains full ownership of the repository and the code, published under the chosen open source license. The programme does not claim exclusive rights over the funded work and does not require transfer of the repository to a Golem organization.
+The builder retains full ownership of the repository and the code, published under the chosen open source licence. The programme does not claim exclusive rights over the funded work and does not require transfer of the repository to a Golem organisation.
 
 **Can I use the project for my portfolio or continue developing it?**
 
@@ -121,3 +121,15 @@ The Golem team reviews applications on a rolling basis. There is no fixed respon
 **What should the 2–3 minute demo video show?**
 
 A short recording of the project running in practice — enough for someone unfamiliar with the work to grasp what it does and how it uses Golem. The video is a required deliverable and is used for amplification on official Golem channels.
+
+**When the bounty is paid in $GLM, how is the USD amount converted?**
+
+The bounty is denominated in 500 USD and paid in $GLM. The $GLM amount is fixed at the rate on the day of payment, so the equivalent USD value at that moment matches the agreed bounty. Builders provide a wallet address and the network they want to receive on (Polygon or Ethereum mainnet); $GLM is transferred directly.
+
+**Can I use AI tools or code assistants while building?**
+
+Yes. The deliverable is the working project, the documentation and the demo video. How you build it is up to you — AI code assistants, pair-programming tools, or anything else. What matters is that the code is yours to publish under an open licence, the technical write-up reflects your understanding of the work, and the project actually runs on Golem.
+
+**Can I fork an existing Golem project for my submission?**
+
+Forks are accepted only as a starting point and only with substantial new work on top. A pure fork with minor changes does not qualify. If you're in doubt about whether your direction counts as substantial, mention it in the application form — the team will tell you up front.

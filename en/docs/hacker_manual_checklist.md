@@ -15,7 +15,7 @@ References in parentheses point to the file where each item is covered.
 
 ## 1. Programme fundamentals
 
-- [✅] Explicit mission and purpose (README.md → "Introduction", "Why this programme exists")
+- [✅] Explicit mission and purpose (README.md → "Introduction")
 - [✅] Difference vs classic hackathon stated (README.md → "Introduction")
 - [✅] Target audience defined across 3 profiles (README.md → "Who this is for")
 - [✅] Minimum visual identity (logo, banner, badges in README.md)
