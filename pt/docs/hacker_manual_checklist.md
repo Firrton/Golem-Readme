@@ -83,7 +83,7 @@ As referências entre parênteses apontam ao arquivo onde está coberto cada ite
 ## 8. IP e licenças
 
 - [✅] Builder mantém a propriedade do código (FAQ.md)
-- [✅] Licença open source exigida (submission-guide.md)
+- [✅] Licença open source exigida (guia_builders.md)
 - [✅] Golem pode difundir o projeto (FAQ.md, README.md → "Co-promoção")
 - [✅] Reuso do projeto pelo builder permitido (FAQ.md)
 
@@ -99,20 +99,21 @@ As referências entre parênteses apontam ao arquivo onde está coberto cada ite
 
 ## 10. Entregáveis e submission
 
-- [✅] Repo público no GitHub exigido (submission-guide.md)
-- [✅] README com seções mínimas definidas (submission-guide.md)
-- [✅] Métricas reais de execução sobre Golem (submission-guide.md, README.md)
-- [✅] Write-up para Discord (submission-guide.md)
-- [✅] Wallet para o pagamento no submission (submission-guide.md)
+- [✅] Repo público no GitHub exigido (guia_builders.md → "Entregáveis")
+- [✅] README com seções mínimas definidas (guia_builders.md → "Entregáveis")
+- [✅] Métricas reais de execução sobre Golem (guia_builders.md, README.md)
+- [✅] Write-up para Discord (guia_builders.md → "Entregáveis")
+- [✅] Wallet para o pagamento no submission (guia_builders.md)
+- [✅] Vídeo demo (2–3 min) exigido para amplificação — definido em [guia_builders.md](../docs/guia_builders.md)
 - [🟡] Template de README pré-armado — opcional mas reduz fricção
 
 ---
 
 ## 11. Pitch
 
-- [✅] Template estruturado disponível (pitch_template.md)
+- [✅] Candidatura através do formulário Tally (https://forms.golem.network/golem-builders-programme)
 - [✅] Campos mínimos definidos (track, descrição, escopo, plano, entregáveis)
-- [🟡] Formulário oficial: marcado como "pendente" no README.md → resolver antes de abrir tração séria
+- [✅] Formulário de candidatura activo: https://forms.golem.network/golem-builders-programme
 - [⊘] Pitch em vídeo / demo day — o programa não usa formato pitch público, não aplica
 
 ---
@@ -130,7 +131,6 @@ As referências entre parênteses apontam ao arquivo onde está coberto cada ite
 
 - [✅] Discord como canal único oficial (README.md, FAQ.md)
 - [✅] Recursos oficiais (docs, repos, token) listados (README.md)
-- [🟡] Comunidades parceiras: "por confirmar" — atualizar quando se concretizem
 - [🟡] Cadência de comunicação durante o projeto — esperada "proativa" mas sem frequência sugerida
 
 ---
@@ -172,9 +172,8 @@ As referências entre parênteses apontam ao arquivo onde está coberto cada ite
 
 1. **Código de conduta** curto (1 página) linkado do README e FAQ.
 2. **Política sobre uso de IA generativa** e **código pré-existente / forks** — 2 parágrafos no FAQ.
-3. **Formulário oficial de pitch** — destravar o "pendente" do README.
-4. **SLA aproximado de resposta ao pitch** (ex: <7 dias úteis).
-5. **Prazo de pagamento após a aprovação** (ex: <X dias em $GLM).
+3. **SLA aproximado de resposta à candidatura** (ex: <7 dias úteis).
+4. **Prazo de pagamento após a aprovação** (ex: <X dias em $GLM).
 
 O resto (rubrica numérica, quickstart próprio, template de README, mentoria estruturada) são melhorias incrementais que fazem sentido quando o programa crescer, não agora.
 

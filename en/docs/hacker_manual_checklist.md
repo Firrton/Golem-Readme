@@ -83,7 +83,7 @@ References in parentheses point to the file where each item is covered.
 ## 8. IP and licensing
 
 - [✅] Builder retains code ownership (FAQ.md)
-- [✅] Open-source license required (submission_guide.md)
+- [✅] Open-source licence required (builders_guide.md)
 - [✅] Golem can promote the project (FAQ.md, README.md → "Co-promotion")
 - [✅] Builder may reuse the project (FAQ.md)
 
@@ -99,20 +99,21 @@ References in parentheses point to the file where each item is covered.
 
 ## 10. Deliverables and submission
 
-- [✅] Public GitHub repo required (submission_guide.md)
-- [✅] README with minimum sections defined (submission_guide.md)
-- [✅] Real execution metrics on Golem (submission_guide.md, README.md)
-- [✅] Write-up for Discord (submission_guide.md)
-- [✅] Wallet for payment at submission (submission_guide.md)
+- [✅] Public GitHub repo required (builders_guide.md → "Deliverables")
+- [✅] README with minimum sections defined (builders_guide.md → "Deliverables")
+- [✅] Real execution metrics on Golem (builders_guide.md, README.md)
+- [✅] Write-up for Discord (builders_guide.md → "Deliverables")
+- [✅] Wallet for payment at submission (builders_guide.md)
+- [✅] Demo video (2–3 min) required for amplification — defined in [builders_guide.md](../docs/builders_guide.md)
 - [🟡] Pre-built README template — optional but lowers friction
 
 ---
 
 ## 11. Pitch
 
-- [✅] Structured template available (pitch_template.md)
+- [✅] Application via Tally form (https://forms.golem.network/golem-builders-programme)
 - [✅] Minimum fields defined (track, description, scope, plan, deliverables)
-- [🟡] Official form: marked as "pending" in README.md — resolve before pushing for traction
+- [✅] Application form live: https://forms.golem.network/golem-builders-programme
 - [⊘] Video pitch / demo day — programme doesn't use public pitch format, N/A
 
 ---
@@ -130,7 +131,6 @@ References in parentheses point to the file where each item is covered.
 
 - [✅] Discord as single official channel (README.md, FAQ.md)
 - [✅] Official resources (docs, repos, token) listed (README.md)
-- [🟡] Partner communities: "TBC" — update once confirmed
 - [🟡] Communication cadence during project — expected "proactive" but no suggested frequency
 
 ---
@@ -172,9 +172,8 @@ References in parentheses point to the file where each item is covered.
 
 1. **Code of conduct** (1 page) linked from README and FAQ.
 2. **Policy on generative AI** and **pre-existing code / forks** — 2 paragraphs in FAQ.
-3. **Official pitch form** — unblock the "pending" in README.
-4. **Approximate pitch response SLA** (e.g., <7 business days).
-5. **Payment timeline after approval** (e.g., <X days in $GLM).
+3. **Approximate application response SLA** (e.g., <7 business days).
+4. **Payment timeline after approval** (e.g., <X days in $GLM).
 
 The rest (numeric rubric, programme quickstart, README template, structured mentorship) are incremental improvements that make sense when the programme grows, not now.
 

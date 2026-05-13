@@ -42,27 +42,27 @@ O caminho principal recomendado é `@golem-sdk/task-executor`, uma biblioteca em
 
 **Posso trabalhar em testnet ou tenho que usar mainnet?**
 
-Ambas as redes são válidas para entrega do programa. A testnet, que atualmente opera sobre a rede hoodi, é o ambiente recomendado para a maioria dos projetos, dado que permite executar trabalho real sobre a rede sem custo real. A mainnet é apropriada quando o projeto requer demonstrar comportamento econômico real ou integrações com sistemas de produção. A escolha deve ser explicitada no pitch.
+Ambas as redes são válidas para entrega do programa. A testnet, que atualmente opera sobre a rede hoodi, é o ambiente recomendado para a maioria dos projetos, dado que permite executar trabalho real sobre a rede sem custo real. A mainnet é apropriada quando o projeto requer demonstrar comportamento econômico real ou integrações com sistemas de produção. A escolha deve ser explicitada no formulário de candidatura.
 
 **Há suporte para linguagens diferentes de JavaScript e TypeScript?**
 
-O stack da Golem conta com SDKs em outras linguagens, mas a documentação mais atualizada e os exemplos oficiais concentram-se no ecossistema JavaScript. Os builders que prefiram trabalhar em outra linguagem podem fazê-lo, mas devem levar em conta que a curva de aprendizado e o suporte disponível são menores. Recomenda-se discutir essa decisão durante a fase de pitch.
+O stack da Golem conta com SDKs em outras linguagens, mas a documentação mais atualizada e os exemplos oficiais concentram-se no ecossistema JavaScript. Os builders que prefiram trabalhar em outra linguagem podem fazê-lo, mas devem levar em conta que a curva de aprendizado e o suporte disponível são menores. Recomenda-se discutir essa decisão durante a fase de candidatura.
 
 **Posso usar GPU em meu projeto?**
 
-A Golem oferece acesso a providers com GPU, embora a disponibilidade possa ser variável conforme o momento e o tipo de hardware exigido. Os projetos que dependam criticamente de GPU devem mencionar essa dependência no pitch para que a equipe possa confirmar a viabilidade antes da aprovação.
+A Golem oferece acesso a providers com GPU, embora a disponibilidade possa ser variável conforme o momento e o tipo de hardware exigido. Os projetos que dependam criticamente de GPU devem mencionar essa dependência no formulário de candidatura para que a equipe possa confirmar a viabilidade antes da aprovação.
 
 ---
 
 ## Sobre o processo do programa
 
-**Quanto tempo a equipe leva para revisar um pitch?**
+**Quanto tempo a equipe leva para revisar uma candidatura?**
 
-O prazo concreto de resposta depende do volume de pitches recebidos a cada momento. A equipe do programa busca responder com a maior agilidade razoável e notifica o builder assim que a decisão é tomada.
+A equipe da Golem revisa as candidaturas de forma contínua à medida que chegam. Não há um prazo fixo de resposta, mas o builder é notificado assim que a decisão é tomada. Se a ideia se enquadra no programa, a equipe entra em contacto para definir os detalhes e os marcos antes de o desenvolvimento começar.
 
-**O que acontece se meu pitch for rejeitado?**
+**O que acontece se minha candidatura for rejeitada?**
 
-As decisões sobre pitches rejeitados ficam a critério da equipe do programa. Em alguns casos, a rejeição pode ser acompanhada de comentários específicos que permitem ao builder ajustar a proposta e reenviá-la. Em outros casos, pode-se recomendar ao builder explorar uma direção alternativa ou esperar antes de apresentar uma nova proposta. A decisão específica é comunicada diretamente ao builder no momento da rejeição.
+As decisões sobre candidaturas rejeitadas ficam a critério da equipe do programa. Em alguns casos, a rejeição pode ser acompanhada de comentários específicos que permitem ao builder ajustar a proposta e reenviá-la. Em outros casos, pode-se recomendar ao builder explorar uma direção alternativa ou esperar antes de apresentar uma nova proposta. A decisão específica é comunicada diretamente ao builder no momento da rejeição.
 
 **Posso modificar o escopo do projeto durante o desenvolvimento?**
 
@@ -71,10 +71,6 @@ Mudanças menores no escopo, motivadas por descobertas técnicas durante o desen
 **O que acontece se eu não conseguir completar o projeto?**
 
 As situações de projetos não completados são avaliadas caso a caso pela equipe do programa. Quando o builder manteve comunicação durante o desenvolvimento e existem circunstâncias técnicas genuínas que impediram a finalização, a equipe pode considerar pagamentos parciais proporcionais ao avanço demonstrável ou reorientar o projeto para um escopo reduzido. Em situações de abandono sem comunicação, não procede o pagamento do bounty. A política do programa busca proteger tanto o builder diante de dificuldades genuínas quanto a equipe diante de entregas não completadas.
-
-**Posso apresentar um pitch sem ter lido todos os documentos do repositório?**
-
-É tecnicamente possível, mas não recomendado. A qualidade do pitch e a velocidade de aprovação dependem diretamente de o builder ter compreendido os critérios do programa, as direções de cada track e os requisitos do entregável. Os pitches de builders que evidenciam conhecimento da documentação recebem menor quantidade de pedidos de ajuste e avançam com maior rapidez no processo.
 
 ---
 
@@ -90,7 +86,7 @@ Sim. O builder está livre para usar o projeto para portfólio profissional, apr
 
 **Que difusão a Golem faz do projeto?**
 
-Uma vez validado o entregável, a equipe coordena a difusão do projeto pelos canais oficiais da Golem e pelas comunidades parceiras correspondentes. Isso inclui publicação no Discord oficial, menção em redes sociais do projeto quando aplicável, e inclusão do repositório como referência dentro do ecossistema. A difusão específica varia conforme o tipo de projeto e o momento do programa.
+Uma vez validado o entregável, a equipe coordena a difusão do projeto pelos canais oficiais da Golem. Isso inclui publicação no Discord oficial, menção em redes sociais do projeto quando aplicável, e inclusão do repositório como referência dentro do ecossistema. A difusão específica varia conforme o tipo de projeto e o momento do programa.
 
 **Posso apresentar o projeto em eventos ou conferências?**
 
@@ -102,10 +98,26 @@ Sim. O builder está livre para apresentar seu trabalho em qualquer evento, hack
 
 Para perguntas não cobertas neste documento, os canais recomendados se diferenciam conforme a natureza da consulta.
 
-Para consultas específicas sobre o programa, a primeira opção é o canal de Discord dedicado ao builder programme dentro do servidor oficial da Golem, onde a equipe do programa atende dúvidas sobre tracks, pitches, escopo, entrega, pagamentos e qualquer aspecto operacional da iniciativa.
+Para consultas específicas sobre o programa, a primeira opção é o canal de builders no Discord oficial da Golem (discord.gg/golem), onde a equipe do programa atende dúvidas sobre tracks, candidaturas, escopo, entrega, pagamentos e qualquer aspecto operacional da iniciativa.
 
 Para consultas técnicas sobre o protocolo Golem em si, independentemente do programa, a opção adequada é o canal `❓question-answers` ou equivalente do servidor oficial da Golem, onde a comunidade técnica mais ampla e a equipe de protocolo respondem dúvidas sobre o SDK, yagna, providers, infraestrutura e outros aspectos técnicos gerais.
 
 Para aprofundar em aspectos técnicos antes de levantar uma consulta, a documentação oficial da Golem em [docs.golem.network](https://docs.golem.network) constitui o recurso de referência principal e costuma responder à maioria das dúvidas técnicas habituais sem necessidade de canalizá-las por chat.
 
 O acesso ao servidor oficial do Discord é feito a partir de [discord.gg/golem](https://discord.gg/golem).
+
+---
+
+## Perguntas adicionais
+
+**Preciso preparar um documento de pitch ou um template para me candidatar?**
+
+Não. As candidaturas são feitas através do formulário oficial em https://forms.golem.network/golem-builders-programme. O formulário recolhe o track, a ideia, a abordagem técnica e a experiência relevante. Não há nenhum documento de pitch separado para redigir ou enviar.
+
+**Quanto tempo demora a receber resposta após a candidatura?**
+
+A equipe da Golem revisa as candidaturas de forma contínua. Não há um prazo fixo de resposta, mas o builder será notificado assim que a decisão for tomada. Se a ideia se enquadra no programa, a equipe entra em contacto para discutir os detalhes e os marcos antes de o desenvolvimento começar.
+
+**O que deve mostrar o vídeo demo de 2–3 minutos?**
+
+Uma gravação breve do projeto a funcionar na prática — suficiente para que alguém sem conhecimento prévio do trabalho compreenda o que faz e como usa a Golem. O vídeo é um entregável obrigatório e é utilizado para amplificação nos canais oficiais da Golem.
